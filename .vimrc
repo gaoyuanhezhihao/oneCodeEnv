@@ -18,8 +18,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()
-
-
+"auto complete () {} []
+inoremap ( ()<LEFT>  
+inoremap { {}<LEFT>  
+inoremap [ []<LEFT>  
+set tabstop=4
 filetype plugin indent on
 "split navigations
 nnoremap <C-K> <C-W><C-J>
