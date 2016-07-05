@@ -16,13 +16,14 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 "auto complete () {} []
-inoremap ( ()<LEFT>  
-inoremap { {}<LEFT>  
-inoremap [ []<LEFT>  
+"inoremap ( ()<LEFT>  
+"inoremap { {}<LEFT>  
+"inoremap [ []<LEFT>  
 set tabstop=4
+set clipboard=unnamedplus
 filetype plugin indent on
 "split navigations
 nnoremap <C-K> <C-W><C-J>
