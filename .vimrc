@@ -1,5 +1,4 @@
 set nocompatible
-
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -12,6 +11,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
@@ -22,19 +22,47 @@ call vundle#end()
 "inoremap ( ()<LEFT>  
 "inoremap { {}<LEFT>  
 "inoremap [ []<LEFT>  
+"define <Leader>
+let mapleader=";"
+" goto line head/end.
+nmap lb 0
+nmap le $
+" copy selected to system clipboard.
+vnoremap <Leader>y "+y
+" copy to vim from system clipboard.
+nmap <Leader>p "+p
+" close current split window.
+nmap <Leader>q :q<CR>
+" save current windows.
+nmap <Leader>w :w<CR>
+" go to next window.
+nnoremap nw <C-W><C-W>
+" go to right window.
+nnoremap <Leader>lw <C-W>l
+" go to left window.
+nnoremap <Leader>hw <C-W>h
+" go to up window.
+nnoremap <Leader>kw <C-W>k
+" go to down window.
+nnoremap <Leader>jw <C-W>j
+" go out pairs.
+nmap <Leader>pa %
+" go to line end in Insert mode.
+inoremap <C-l> <Esc>A
 set tabstop=4
 set clipboard=unnamedplus
 filetype plugin indent on
 "split navigations
-nnoremap <C-K> <C-W><C-J>
-nnoremap <C-I> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-J> <C-W><C-H>
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
+nnoremap <C-J> <C-W>j
 "Enable folding
 set foldmethod=indent
 set foldlevel=99
 "Enable folding with the spacebar
 nnoremap <space> za
+set gcr=n:blinkon0
 "SimpylFold
 let g:SimpylFold_docstring_preview=1
 "Flagging unnecessary whitespace
@@ -51,7 +79,7 @@ au BufNewFile,BufRead *.py
 "youcompleteme  默认tab  s-tab 和自动补全冲突
 
 let g:ycm_key_list_select_completion = ['<Tab>']
-let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ycm_key_list_previous_completion = ['<S-tab>']
 "" 
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 " 开启 YCM 基于标签引擎
@@ -100,5 +128,92 @@ set clipboard=unnamed
 " nerdtree
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <ESC>:NERDTreeToggle<CR>
+" nerdcommenter
+" comment current line.
+" <Leader>cc
+" uncomment current line.
+" <Leader>cu
+" disable arrow key.
+function! AddEmptyLineBelow()
+		call append(line("."), "")
+endfunction
 
+function! AddEmptyLineAbove()
+		let l:scrolloffsave = &scrolloff
+		" Avoid jerky scrolling with ^E at top of window
+		"   set scrolloff=0
+		"     call append(line(".") - 1, "")
+		if winline() != winheight(0)
+				silent normal! <C-e>
+		end
+		let &scrolloff = l:scrolloffsave
+endfunction
 
+function! DelEmptyLineBelow()
+		if line(".") == line("$")
+				return
+		end
+		let l:line = getline(line(".") + 1)
+		if l:line =~ '^\s*$'
+				let l:colsave = col(".")
+				.+1d
+				''
+				call cursor(line("."), l:colsave)
+		end
+endfunction
+
+function! DelEmptyLineAbove()
+		if line(".") == 1
+				return
+		end
+		let l:line = getline(line(".") - 1)
+		if l:line =~ '^\s*$'
+				let l:colsave = col(".")
+				.-1d
+				silent normal! <C-y>
+				call cursor(line("."), l:colsave)
+		end
+endfunction
+
+function! SetArrowKeysAsTextShifters()
+		" normal mode
+		nmap <silent> <Left> <<
+		nmap <silent> <Right> >>
+		nnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>
+		nnoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>
+		nnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>
+		nnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>
+
+		" visual mode
+		vmap <silent> <Left> <
+		vmap <silent> <Right> >
+		vnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>gv
+		vnoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>gv
+		vnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>gv
+		vnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>gv
+		" insert mode
+		imap <silent> <Left> <C-D>
+		imap <silent> <Right> <C-T>
+		inoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>a
+		inoremap <silent> <Down> <Esc>: call AddEmptyLineAbove()<CR>a
+		inoremap <silent> <C-Up> <Esc>: call DelEmptyLineBelow()<CR>a
+		inoremap <silent> <C-Down> <Esc>: call AddEmptyLineBelow()<CR>a
+
+		"disable modified versions we are not using.
+		nnoremap <S-Up> <NOP>
+		nnoremap <S-Down> <NOP>
+		nnoremap <S-Left> <NOP>
+		nnoremap <S-Right> <NOP>
+		
+		vnoremap <S-Up> <NOP>
+		vnoremap <S-Down> <NOP>
+		vnoremap <S-Left> <NOP>
+		vnoremap <S-Right> <NOP>
+		
+		inoremap <S-Up> <NOP>
+		inoremap <S-Down> <NOP>
+		inoremap <S-Left> <NOP>
+		inoremap <S-Right> <NOP>
+endfunction
+
+call SetArrowKeysAsTextShifters()
