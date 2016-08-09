@@ -17,6 +17,12 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 call vundle#end()
 "auto complete () {} []
 "inoremap ( ()<LEFT>  
@@ -67,6 +73,10 @@ set gcr=n:blinkon0
 let g:SimpylFold_docstring_preview=1
 "Flagging unnecessary whitespace
 "set encoding = utf-8
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 au BufNewFile,BufRead *.py
     \ set tabstop=4
     \ set softtabstop=4
@@ -134,6 +144,22 @@ imap <F3> <ESC>:NERDTreeToggle<CR>
 " uncomment current line.
 " <Leader>cu
 " disable arrow key.
+" #Powerline
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
+" === 主题 molokai ===
+Plugin 'tomasr/molokai'
+" 设置主题 colorscheme molokai
+set background=dark
+" === indentLine代码排版缩进标识 ===
+Plugin'Yggdroot/indentLine'
+let g:indentLine_noConcealCursor = 1
+let g:indentLine_color_term = 0
+" 缩进的显示标识|
+let g:indentLine_char = '¦'"
 function! AddEmptyLineBelow()
 		call append(line("."), "")
 endfunction
