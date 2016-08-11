@@ -120,14 +120,12 @@ let g:ycm_warning_symbol='>*'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 "设置跳转的快捷键，可以跳转到definition和declaration
-nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
+"nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+"nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
 syntax on
 "if has('gui_running')
-set background=dark
-let g:solarized_termcolors=256
 "colorscheme solarized
 "else
 "	colorscheme zenburn
@@ -155,11 +153,11 @@ Plugin 'tomasr/molokai'
 " 设置主题 colorscheme molokai
 set background=dark
 " === indentLine代码排版缩进标识 ===
-Plugin'Yggdroot/indentLine'
-let g:indentLine_noConcealCursor = 1
-let g:indentLine_color_term = 0
-" 缩进的显示标识|
-let g:indentLine_char = '¦'"
+"Plugin'Yggdroot/indentLine'
+"let g:indentLine_noConcealCursor = 1
+"let g:indentLine_color_term = 0
+"" 缩进的显示标识|
+"let g:indentLine_char = '¦'"
 function! AddEmptyLineBelow()
 		call append(line("."), "")
 endfunction
@@ -243,3 +241,17 @@ function! SetArrowKeysAsTextShifters()
 endfunction
 
 call SetArrowKeysAsTextShifters()
+" #cscope
+if filereadable("cscope.out")
+    cs add cscope.out
+elseif $CSCOPE_DB != "" 
+    cs add $CSCOPE_DB
+endif
+nmap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>f :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>i :cs find i ^<C-R>=expand("<cword>")<CR>$<CR>
+nmap <Leader>d :cs find d <C-R>=expand("<cword>")<CR><CR>
