@@ -21,9 +21,8 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
 call vundle#end()
+filetype on
 "auto complete () {} []
 "inoremap ( ()<LEFT>  
 "inoremap { {}<LEFT>  
@@ -119,6 +118,10 @@ let g:ycm_error_symbol='>>'
 let g:ycm_warning_symbol='>*'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
+"---Syntastic---
+hi SpellBad ctermfg=088 guifg=#870000 guibg=#080808
+hi SpellCap ctermfg=190 guifg=#dfff00 guibg=#080808
+"===Syntastic===
 "设置跳转的快捷键，可以跳转到definition和declaration
 "nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
 "nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
@@ -143,15 +146,15 @@ imap <F3> <ESC>:NERDTreeToggle<CR>
 " <Leader>cu
 " disable arrow key.
 " #Powerline
-set nocompatible   " Disable vi-compatibility
+"set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 
 " === 主题 molokai ===
-Plugin 'tomasr/molokai'
+"Plugin 'tomasr/molokai'
 " 设置主题 colorscheme molokai
-set background=dark
+"set background=dark
 " === indentLine代码排版缩进标识 ===
 "Plugin'Yggdroot/indentLine'
 "let g:indentLine_noConcealCursor = 1
@@ -247,11 +250,12 @@ if filereadable("cscope.out")
 elseif $CSCOPE_DB != "" 
     cs add $CSCOPE_DB
 endif
-nmap <Leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>f :cs find f <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>i :cs find i ^<C-R>=expand("<cword>")<CR>$<CR>
-nmap <Leader>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gs :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gg :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gc :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gt :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>ge :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gf :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gd :cs find d <C-R>=expand("<cword>")<CR><CR>
+" # make backspace works well
+set backspace=indent,eol,start
