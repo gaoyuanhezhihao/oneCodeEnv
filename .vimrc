@@ -21,12 +21,14 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
+Plugin 'majutsushi/tagbar'
+Plugin 'brookhong/cscope.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
 filetype on
-"auto complete () {} []
-"inoremap ( ()<LEFT>  
-"inoremap { {}<LEFT>  
-"inoremap [ []<LEFT>  
 "define <Leader>
 let mapleader=";"
 " goto line head/end.
@@ -57,6 +59,7 @@ inoremap <C-l> <Esc>A
 set tabstop=4
 set clipboard=unnamedplus
 filetype plugin indent on
+
 "split navigations
 nnoremap <C-K> <C-W>k
 nnoremap <C-H> <C-W>h
@@ -76,14 +79,12 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+    "\ set softtabstop=4
+    "\ set shiftwidth=4
+    "\ set textwidth=79
+    "\ set expandtab
+    "\ set autoindent
+    "\ set fileformat=unix
 "YouCompleteMe
 "youcompleteme  默认tab  s-tab 和自动补全冲突
 
@@ -91,6 +92,7 @@ let g:ycm_key_list_select_completion = ['<Tab>']
 let g:ycm_key_list_previous_completion = ['<S-tab>']
 "" 
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+let g:ycm_python_binary_path = '/usr/bin/python2.7'
 " 开启 YCM 基于标签引擎
 let g:ycm_collect_identifiers_from_tag_files = 1
 " 从第2个键入字符就开始罗列匹配项
@@ -149,7 +151,14 @@ imap <F3> <ESC>:NERDTreeToggle<CR>
 "set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
+"---color scheme---
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+if &t_Co >= 256 || has("gui_running")
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    set background=dark
+    colorscheme gruvbox
+endif
+"===color scheme===
 
 " === 主题 molokai ===
 "Plugin 'tomasr/molokai'
@@ -162,85 +171,85 @@ set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 "" 缩进的显示标识|
 "let g:indentLine_char = '¦'"
 function! AddEmptyLineBelow()
-		call append(line("."), "")
+    call append(line("."), "")
 endfunction
 
 function! AddEmptyLineAbove()
-		let l:scrolloffsave = &scrolloff
-		" Avoid jerky scrolling with ^E at top of window
-		"   set scrolloff=0
-		"     call append(line(".") - 1, "")
-		if winline() != winheight(0)
-				silent normal! <C-e>
-		end
-		let &scrolloff = l:scrolloffsave
+    let l:scrolloffsave = &scrolloff
+    " Avoid jerky scrolling with ^E at top of window
+    "   set scrolloff=0
+    "     call append(line(".") - 1, "")
+    if winline() != winheight(0)
+        silent normal! <C-e>
+    end
+    let &scrolloff = l:scrolloffsave
 endfunction
 
 function! DelEmptyLineBelow()
-		if line(".") == line("$")
-				return
-		end
-		let l:line = getline(line(".") + 1)
-		if l:line =~ '^\s*$'
-				let l:colsave = col(".")
-				.+1d
-				''
-				call cursor(line("."), l:colsave)
-		end
+    if line(".") == line("$")
+        return
+    end
+    let l:line = getline(line(".") + 1)
+    if l:line =~ '^\s*$'
+        let l:colsave = col(".")
+        .+1d
+        ''
+        call cursor(line("."), l:colsave)
+    end
 endfunction
 
 function! DelEmptyLineAbove()
-		if line(".") == 1
-				return
-		end
-		let l:line = getline(line(".") - 1)
-		if l:line =~ '^\s*$'
-				let l:colsave = col(".")
-				.-1d
-				silent normal! <C-y>
-				call cursor(line("."), l:colsave)
-		end
+    if line(".") == 1
+        return
+    end
+    let l:line = getline(line(".") - 1)
+    if l:line =~ '^\s*$'
+        let l:colsave = col(".")
+        .-1d
+        silent normal! <C-y>
+        call cursor(line("."), l:colsave)
+    end
 endfunction
 
 function! SetArrowKeysAsTextShifters()
-		" normal mode
-		nmap <silent> <Left> <<
-		nmap <silent> <Right> >>
-		nnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>
-		nnoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>
-		nnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>
-		nnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>
+    " normal mode
+    nmap <silent> <Left> <<
+    nmap <silent> <Right> >>
+    nnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>
+    nnoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>
+    nnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>
+    nnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>
 
-		" visual mode
-		vmap <silent> <Left> <
-		vmap <silent> <Right> >
-		vnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>gv
-		vnoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>gv
-		vnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>gv
-		vnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>gv
-		" insert mode
-		imap <silent> <Left> <C-D>
-		imap <silent> <Right> <C-T>
-		inoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>a
-		inoremap <silent> <Down> <Esc>: call AddEmptyLineAbove()<CR>a
-		inoremap <silent> <C-Up> <Esc>: call DelEmptyLineBelow()<CR>a
-		inoremap <silent> <C-Down> <Esc>: call AddEmptyLineBelow()<CR>a
+    " visual mode
+    vmap <silent> <Left> <
+    vmap <silent> <Right> >
+    vnoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>gv
+    vnoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>gv
+    vnoremap <silent> <C-Up> <Esc>:call DelEmptyLineBelow()<CR>gv
+    vnoremap <silent> <C-Down> <Esc>:call AddEmptyLineBelow()<CR>gv
+    " insert mode
+    imap <silent> <Left> <C-D>
+    imap <silent> <Right> <C-T>
+    inoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>a
+    inoremap <silent> <Down> <Esc>: call AddEmptyLineAbove()<CR>a
+    inoremap <silent> <C-Up> <Esc>: call DelEmptyLineBelow()<CR>a
+    inoremap <silent> <C-Down> <Esc>: call AddEmptyLineBelow()<CR>a
 
-		"disable modified versions we are not using.
-		nnoremap <S-Up> <NOP>
-		nnoremap <S-Down> <NOP>
-		nnoremap <S-Left> <NOP>
-		nnoremap <S-Right> <NOP>
-		
-		vnoremap <S-Up> <NOP>
-		vnoremap <S-Down> <NOP>
-		vnoremap <S-Left> <NOP>
-		vnoremap <S-Right> <NOP>
-		
-		inoremap <S-Up> <NOP>
-		inoremap <S-Down> <NOP>
-		inoremap <S-Left> <NOP>
-		inoremap <S-Right> <NOP>
+    "disable modified versions we are not using.
+    nnoremap <S-Up> <NOP>
+    nnoremap <S-Down> <NOP>
+    nnoremap <S-Left> <NOP>
+    nnoremap <S-Right> <NOP>
+
+    vnoremap <S-Up> <NOP>
+    vnoremap <S-Down> <NOP>
+    vnoremap <S-Left> <NOP>
+    vnoremap <S-Right> <NOP>
+
+    inoremap <S-Up> <NOP>
+    inoremap <S-Down> <NOP>
+    inoremap <S-Left> <NOP>
+    inoremap <S-Right> <NOP>
 endfunction
 
 call SetArrowKeysAsTextShifters()
@@ -257,5 +266,14 @@ nmap <Leader>gt :cs find t <C-R>=expand("<cword>")<CR><CR>
 nmap <Leader>ge :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <Leader>gf :cs find f <C-R>=expand("<cword>")<CR><CR>
 nmap <Leader>gd :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap <Leader>gj :cn<CR><CR>
+nmap <Leader>gk :cp<CR><CR>
 " # make backspace works well
 set backspace=indent,eol,start
+"  ---tagbar---
+nmap <F8> :TagbarToggle<CR>
+"  ===tagbar===
+"  ---easytag--
+set tags+=./tags;../tags
+let g:easytags_dynamic_files=1
+"  ===easytag==
