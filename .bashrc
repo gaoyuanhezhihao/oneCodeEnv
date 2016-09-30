@@ -113,3 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 alias tmux="tmux -2"
+xmodmap -e "clear Lock"
+xmodmap -e "keycode 66 = Escape NoSymbol Escape" # this will make Caps Lock to act as Esc
+xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock" # Esc to Caps Lock
+xmodmap -pke > ~/.xmodmap
+
