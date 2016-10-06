@@ -3,6 +3,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'tmhedberg/SimpyFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -256,18 +257,37 @@ call SetArrowKeysAsTextShifters()
 " #cscope
 if filereadable("cscope.out")
     cs add cscope.out
+elseif filereadable("../cscope.out")
+    cs add ./cscope.out
 elseif $CSCOPE_DB != "" 
     cs add $CSCOPE_DB
 endif
-nmap <Leader>gs :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>gg :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>gc :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>gt :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>ge :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>gf :cs find f <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>gd :cs find d <C-R>=expand("<cword>")<CR><CR>
-nmap <Leader>gj :cn<CR><CR>
-nmap <Leader>gk :cp<CR><CR>
+" s: Find this C symbol
+ nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
+" " g: Find this definition
+ nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
+" " d: Find functions called by this function
+ nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
+" " c: Find functions calling this function
+ nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
+" " t: Find this text string
+ nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
+" " e: Find this egrep pattern
+ nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
+" " f: Find this file
+ nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
+" " i: Find files #including this file
+ nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>"
+
+"nmap <Leader>gs :cs find s <C-R>=expand("<cword>")<CR><CR>
+""nmap <Leader>gg :cs find g <C-R>=expand("<cword>")<CR><CR>
+"nmap <Leader>gc :cs find c <C-R>=expand("<cword>")<CR><CR>
+"nmap <Leader>gt :cs find t <C-R>=expand("<cword>")<CR><CR>
+"nmap <Leader>ge :cs find e <C-R>=expand("<cword>")<CR><CR>
+"nmap <Leader>gf :cs find f <C-R>=expand("<cword>")<CR><CR>
+"nmap <Leader>gd :cs find d <C-R>=expand("<cword>")<CR><CR>
+"nmap <Leader>gj :cn<CR><CR>
+"nmap <Leader>gk :cp<CR><CR>
 " # make backspace works well
 set backspace=indent,eol,start
 "  ---tagbar---
