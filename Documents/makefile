@@ -1,5 +1,5 @@
-CC :=clang++
-LD :=clang++
+CC :=g++
+LD :=g++
 SRCDIR := src
 BUILDDIR := build
 TARGET :=bin/runner
