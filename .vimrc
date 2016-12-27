@@ -5,7 +5,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'MattesGroeger/vim-bookmarks'
 "Plugin 'tmhedberg/SimpyFold'
-"Plugin 'vim-scripts/indentpython.vim'
+Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 "Plugin 'nvie/vim-flake8'
@@ -15,10 +15,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'kien/ctrlp.vim'
+"Plugin 'JazzCore/ctrlp-cmatcher'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+"Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'Lokaltog/vim-powerline'
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
@@ -27,11 +28,16 @@ Plugin 'xolox/vim-misc'
 Plugin 'majutsushi/tagbar'
 Plugin 'brookhong/cscope.vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'bbchung/clighter'
+Plugin 'othree/eregex.vim'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
+Plugin 'mrtazz/DoxygenToolkit.vim'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 filetype on
 "define <Leader>
@@ -108,6 +114,7 @@ set tabstop=4
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_filepath_completion_use_working_dir=1
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<tab>"
@@ -146,8 +153,17 @@ let g:ycm_warning_symbol='>*'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 "---Syntastic---
+let g:syntastic_check_on_open = 1
 hi SpellBad ctermfg=088 guifg=#870000 guibg=#080808
 hi SpellCap ctermfg=190 guifg=#dfff00 guibg=#080808
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 "===Syntastic===
 "设置跳转的快捷键，可以跳转到definition和declaration
 "nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
@@ -161,8 +177,6 @@ syntax on
 "	colorscheme zenburn
 "endif
 call togglebg#map("<F5>")
-set nu
-set clipboard=unnamed
 " nerdtree
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <ESC>:NERDTreeToggle<CR>
@@ -174,8 +188,27 @@ imap <F3> <ESC>:NERDTreeToggle<CR>
 " disable arrow key.
 " #Powerline
 "set nocompatible   " Disable vi-compatibility
+"  --- basic config ---
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
+set clipboard=unnamed
+set nu
+set relativenumber
+function! NumberToggle()
+    echo &relativenumber
+    if(&relativenumber == 1)
+        set number
+        set norelativenumber
+    else
+        set number
+        set relativenumber
+    endif
+endfunc
+
+nnoremap <F2> :call NumberToggle()<cr>
+imap <F2> :call NumberToggle()<cr>
+"  === basic config ===
+
 "---color scheme---
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 if &t_Co >= 256 || has("gui_running")
@@ -282,26 +315,27 @@ call SetArrowKeysAsTextShifters()
 if filereadable("cscope.out")
     cs add cscope.out
 elseif filereadable("../cscope.out")
-    cs add ./cscope.out
+    cs add ../cscope.out
 elseif $CSCOPE_DB != "" 
     cs add $CSCOPE_DB
 endif
+let g:cscope_silent=1
 " s: Find this C symbol
- nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
+nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
 " " g: Find this definition
- nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
+nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
 " " d: Find functions called by this function
- nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
+nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
 " " c: Find functions calling this function
- nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
+nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
 " " t: Find this text string
- nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
+nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
 " " e: Find this egrep pattern
- nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
+nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
 " " f: Find this file
- nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
+nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " " i: Find files #including this file
- nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>"
+nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>"
 
 "nmap <Leader>gs :cs find s <C-R>=expand("<cword>")<CR><CR>
 ""nmap <Leader>gg :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -321,3 +355,53 @@ nmap <F8> :TagbarToggle<CR>
 set tags+=./tags;../tags
 let g:easytags_dynamic_files=1
 "  ===easytag==
+"  ---vim-cpp-enhanced-highlight---
+let g:cpp_concepts_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_class_scope_highlight = 1
+"  ===vim-cpp-enhanced-highlight===
+""  ---clighter---
+
+"let g:clighter_libclang_file = '/usr/lib/x86_64-linux-gnu/libclang.so'
+""  ===clighter===
+function! CSCV()
+    " add cscope file for opencv3 source code.
+    cscope add /home/hzh/study/cv/opencv3/source/cscope.out /home/hzh/study/cv/opencv3/source
+endfunction    
+"" ---The Silver Searcher---
+"if executable('ag')
+  "" Use ag over grep
+  "set grepprg=ag\ --nogroup\ --nocolor
+
+  "" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  "" ag is fast enough that CtrlP doesn't need to cache
+  "let g:ctrlp_use_caching = 0
+"endif
+"" === The Silver Searcher ===
+"  --- EasyMotion ---
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+"  === EasyMotion ===
+
+""  --- CtrlP ---
+"let g:ctrlp_use_caching = 0
+"if executable('ag')
+    "set grepprg=ag\ --nogroup\ --nocolor
+
+    "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"else
+  "let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+  "let g:ctrlp_prompt_mappings = {
+    "\ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+    "\ }
+"endif
+""  === CtrlP ===
+
+"  --- eregex ---
+let g:eregex_forward_delim = '<Space>/'
+"  === eregex ===
