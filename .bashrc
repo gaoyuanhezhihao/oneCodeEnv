@@ -118,3 +118,9 @@ xmodmap -e "keycode 66 = Escape NoSymbol Escape" # this will make Caps Lock to a
 xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock" # Esc to Caps Lock
 xmodmap -pke > ~/.xmodmap
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+source ~/.usrScript/sourceAll.sh
+
+alias clipc='xclip -selection clipboard'
+alias clipp='xclip -selection clipboard -o'
