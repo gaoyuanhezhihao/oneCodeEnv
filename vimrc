@@ -28,7 +28,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'majutsushi/tagbar'
 Plugin 'brookhong/cscope.vim'
 Plugin 'morhetz/gruvbox'
-Plugin 'octol/vim-cpp-enhanced-highlight'
+"Plugin 'octol/vim-cpp-enhanced-highlight'
 "Plugin 'bbchung/clighter'
 "Plugin 'othree/eregex.vim'
 "Plugin 'dkprice/vim-easygrep'
@@ -41,7 +41,8 @@ Plugin 'justinmk/vim-sneak'
 "Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 filetype on
-source ./.vim/basic.vim
+source ~/.vim/basic.vim
+source ~/.vim/color.vim
 "define <Leader>
 "SimpylFold
 let g:SimpylFold_docstring_preview=1
@@ -115,7 +116,6 @@ let g:syntastic_check_on_wq = 0
 "nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 "nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
-syntax on
 "if has('gui_running')
 "colorscheme solarized
 "else
@@ -154,14 +154,6 @@ nnoremap <F2> :call NumberToggle()<cr>
 imap <F2> :call NumberToggle()<cr>
 "  === basic config ===
 
-"---color scheme---
-set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
-if &t_Co >= 256 || has("gui_running")
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-    set background=dark
-    colorscheme gruvbox
-endif
-"===color scheme===
 
 " === 主题 molokai ===
 "Plugin 'tomasr/molokai'
