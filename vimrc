@@ -38,6 +38,8 @@ Plugin 'ervandew/supertab'
 Plugin 'mrtazz/DoxygenToolkit.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'justinmk/vim-sneak'
+Plugin 'svermeulen/vim-easyclip'
+Plugin 'tpope/vim-repeat'
 "Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 filetype on
@@ -354,3 +356,6 @@ let g:sneak#s_next = 1
 nmap f <Plug>Sneak_f
 nmap t <Plug>Sneak_F
 "  === sneak ===
+"  --- easyclip---
+
+"  === easyclip===
