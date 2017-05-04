@@ -2,6 +2,6 @@
 #include "solution.hpp"
 using namespace std;
 
-int main(int argc, char ** argv) {
+int main() {
     Solution slt;
 }
