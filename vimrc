@@ -330,8 +330,8 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
-"map  f <Plug>(easymotion-bd-f)
-"nmap f <Plug>(easymotion-overwin-f)
+map  f <Plug>(easymotion-bd-f)
+nmap f <Plug>(easymotion-overwin-f)
 "  === EasyMotion ===
 
 ""  --- CtrlP ---
@@ -353,8 +353,8 @@ let g:eregex_forward_delim = '<Space>/'
 "  === eregex ===
 "  --- sneak ---
 let g:sneak#s_next = 1
-nmap f <Plug>Sneak_f
-nmap t <Plug>Sneak_F
+"nmap f <Plug>Sneak_f
+"nmap t <Plug>Sneak_F
 "  === sneak ===
 "  --- easyclip---
 
