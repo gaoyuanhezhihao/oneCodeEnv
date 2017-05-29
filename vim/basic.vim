@@ -16,7 +16,7 @@ nnoremap nw <C-W><C-W>
 nmap <Leader>pa %
 " go to line end in Insert mode.
 inoremap <C-l> <Esc>A
-set mouse=a
+"set mouse=a
 set tabstop=4
 set clipboard=unnamedplus
 set expandtab

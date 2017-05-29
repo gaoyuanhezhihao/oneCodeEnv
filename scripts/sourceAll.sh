@@ -1,8 +1,7 @@
-current_path=/home/hzh/.usrScript
-files=`ls $current_path| grep "\.sh"`
-for f in $files
+current_path=/home/hzh/oneCodeEnv/scripts
+for f in $current_path/*.sh
 do
-    if [ "$f" != "sourceAll.sh" ];then
-        source $current_path/$f
+    if [ "$f" != $current_path/sourceAll.sh ];then
+        source $f
     fi
 done

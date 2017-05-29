@@ -1,13 +1,14 @@
-CC :=g++
-LD :=g++
+CC :=clang++-3.9 -g
+LD :=clang++-3.9 -g
 SRCDIR := src
 BUILDDIR := build
 TARGET :=bin/runner
 
 SRCEXT:=cpp
-SOURCES:=$(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
+SOURCES:=$(shell find $(SRCDIR) -type f -name "*.$(SRCEXT)")
 OBJECTS:=$(patsubst $(SRCDIR)/%, $(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS:= -std=c++11 
+DEP:=$(OBJECTS:%.o=%.d)
+CFLAGS:= -std=c++11 -Wall -Wextra
 LDFLAGS:= 
 INC:= -I include
 
@@ -15,10 +16,15 @@ $(TARGET):$(OBJECTS)
 	@echo "Linking..."
 	@echo "$(LD) $^ -o $(TARGET) $(LIB)"
 	$(LD) -o $(TARGET)  $^ $(LDFLAGS) 
+
+-include $(DEP)
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 	@mkdir -p $(sort $(dir $(OBJECTS)))
 	@echo "$(CC) $(CFLAGS) $(INC) -c -o $@ $<"
+	$(CC) $(CFLAGS) $(INC) -MM -MT $@ -MF $(patsubst %.o, %.d, $@) $<
 	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+
+	#$(CC) $(CFLAGS)  -MMD -c -o $@ $<
 clean:
 	@echo "cleaning...";
 	@echo "$(RM) -r $(BUILDDIR) $(TARGET)";
