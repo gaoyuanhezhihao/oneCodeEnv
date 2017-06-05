@@ -17,10 +17,13 @@ Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'JazzCore/ctrlp-cmatcher'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'enricobacis/vim-airline-clock'
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jiangmiao/auto-pairs'
 "Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'Lokaltog/vim-powerline'
+"Plugin 'Lokaltog/vim-powerline'
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
 Plugin 'xolox/vim-easytags'
@@ -371,3 +374,8 @@ nmap <Leader>mkk <Plug>BookmarkMoveUp
 nmap <Leader>mjj <Plug>BookmarkMoveDown
 nmap <Leader>mg <Plug>BookmarkMoveToLine
 "  === bookmarks ===
+"  --- airline ---
+"let g:airline_section_b = '%{strftime("%c")}'
+let g:airline#extensions#clock#format='%H:%M'
+let g:airline#extensions#clock#updatetime=1000
+"  === airline ===
