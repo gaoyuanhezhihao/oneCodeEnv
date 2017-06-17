@@ -19,7 +19,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'enricobacis/vim-airline-clock'
+"Plugin 'enricobacis/vim-airline-clock'
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jiangmiao/auto-pairs'
 "Plugin 'jeffkreeftmeijer/vim-numbertoggle'
@@ -363,7 +363,7 @@ let g:sneak#s_next = 1
 
 "  === easyclip===
 "  --- bookmarks ---
-nmap <Leader>m  <Plug>BookmarkToggle
+nmap <Leader>mm  <Plug>BookmarkToggle
 nmap <Leader>mi <Plug>BookmarkAnnotate
 nmap <Leader>ma <Plug>BookmarkShowAll
 nmap <Leader>mj <Plug>BookmarkNext
@@ -376,6 +376,14 @@ nmap <Leader>mg <Plug>BookmarkMoveToLine
 "  === bookmarks ===
 "  --- airline ---
 "let g:airline_section_b = '%{strftime("%c")}'
-let g:airline#extensions#clock#format='%H:%M'
-let g:airline#extensions#clock#updatetime=1000
+"let g:airline#extensions#clock#format='%H:%M'
+"let g:airline#extensions#clock#updatetime=1000
+let g:airline_theme='sol'
+"let g:airline#extensions#whitespace#checks = [ 'indent' ]
+let g:airline#extensions#whitespace#enabled = 0
+"let g:airline_setion_gutter=''
+let g:airline#extensions#csv#enabled = 0
+
+"let g:airline_setion_y='%t'
+"let g:airline_setion_z='%t'
 "  === airline ===

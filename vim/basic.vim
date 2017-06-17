@@ -57,7 +57,7 @@ set foldlevel=99
 nnoremap <space> za
 set gcr=n:blinkon0
 
-map <C-m> :call Mouse_toggle()<cr>
+nmap mo :call Mouse_toggle()
 function! Mouse_toggle()
     if &mouse =='a'
         set mouse=

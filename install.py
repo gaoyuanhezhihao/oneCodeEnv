@@ -11,7 +11,8 @@ if __name__ == '__main__':
         dst = home+"/."+n
         if os.path.exists(dst) or os.path.islink(dst):
             old_dst_bkp = dst+".bkp"
-            os.remove(old_dst_bkp)
+            if os.path.exists(old_dst_bkp):
+                os.remove(old_dst_bkp)
             os.rename(dst, old_dst_bkp)
             print("there has been a \"%s\", moved to \"%s\""
                   %(dst, old_dst_bkp))
