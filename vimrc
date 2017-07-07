@@ -119,7 +119,7 @@ let g:syntastic_check_on_wq = 0
 "设置跳转的快捷键，可以跳转到definition和declaration
 "nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
 "nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-"nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
 "if has('gui_running')
 "colorscheme solarized
@@ -261,6 +261,7 @@ elseif filereadable("../cscope.out")
 elseif $CSCOPE_DB != "" 
     cs add $CSCOPE_DB
 endif
+"cs add ~/study/c_cpp/stl/SGI/stl/cscope.out
 let g:cscope_silent=1
 " s: Find this C symbol
 nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
@@ -296,7 +297,10 @@ nmap <Leader>t :TagbarOpenAutoClose<CR>
 "  ===tagbar===
 "  ---easytag--
 set tags+=./tags;../tags
+"set tags+=~/study/c_cpp/stl/SGI/stl/tags
+set tags+=/home/hzh/oneCodeEnv/vim/tags/tags
 let g:easytags_dynamic_files=1
+"let g:easytags_cmd='/home/hzh/software/coder/ctags/exe/bin/ctags'
 "  ===easytag==
 "  ---vim-cpp-enhanced-highlight---
 let g:cpp_concepts_highlight = 1
@@ -316,6 +320,11 @@ function! CSCV()
     " add cscope file for opencv3 source code.
     cscope add /home/hzh/study/cv/opencv3/source/cscope.out /home/hzh/study/cv/opencv3/source
 endfunction    
+
+function! Cstl()
+    " add cscope file for SGI-STL source code.
+    cscope add /home/hzh/study/c_cpp/stl/SGI/stl/cscope.out /home/hzh/study/c_cpp/stl/SGI/stl
+endfunction
 "" ---The Silver Searcher---
 "if executable('ag')
   "" Use ag over grep
@@ -366,8 +375,8 @@ let g:sneak#s_next = 1
 nmap <Leader>mm  <Plug>BookmarkToggle
 nmap <Leader>mi <Plug>BookmarkAnnotate
 nmap <Leader>ma <Plug>BookmarkShowAll
-nmap <Leader>mj <Plug>BookmarkNext
-nmap <Leader>mk <Plug>BookmarkPrev
+nmap <Leader>mmj <Plug>BookmarkNext
+nmap <Leader>mmk <Plug>BookmarkPrev
 nmap <Leader>mc <Plug>BookmarkClear
 nmap <Leader>mx <Plug>BookmarkClearAll
 nmap <Leader>mkk <Plug>BookmarkMoveUp
