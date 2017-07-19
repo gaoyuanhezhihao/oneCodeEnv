@@ -14,7 +14,7 @@
 
 # Points to the root of Google Test, relative to where this file is.
 # Remember to tweak this if you move this file.
-GTEST_DIR = /home/hzh/study/c_cpp/google_test/googletest
+GTEST_DIR = $(HOME)/oneCodeEnv/tmpl/googleTest/googletest
 # Where to find user code.
 TEST_TARGET_NAME:=solution
 USER_SRC_DIR = ../src

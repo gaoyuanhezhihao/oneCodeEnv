@@ -10,3 +10,5 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
 fi
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
 source ~/oneCodeEnv/scripts/sourceAll.sh
+alias cd=pushd
+alias pp=popd
