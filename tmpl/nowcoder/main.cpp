@@ -6,6 +6,7 @@
 #include <string>
 #include <queue>
 #include <limits>
+#include <sstream>
 
 const int INT_MIN=std::numeric_limits<int>::min();
 const int INT_MAX=std::numeric_limits<int>::max();
@@ -15,5 +16,11 @@ void solve(){
 
 }
 int main() {
+    std::string line;
+    getline(cin, line);
+    std::stringstream iss(line);
+
+
+    
     return 0;
 }
