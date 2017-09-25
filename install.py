@@ -18,6 +18,7 @@ if __name__ == '__main__':
                   %(dst, old_dst_bkp))
         os.symlink(src, dst)
 
+    os.system("git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim")
     # os.symlink(cwd+"/bashrc", home+"/.bashrc")
     # os.symlink(cwd+"/vimrc", home+"/.vimrc")
     # os.symlink(cwd+"/tmux.conf", home+".tmux.conf")
