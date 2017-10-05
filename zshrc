@@ -12,3 +12,4 @@ fi
 source ~/oneCodeEnv/scripts/sourceAll.sh
 alias cd=pushd
 alias pp=popd
+source /opt/ros/indigo/setup.zsh

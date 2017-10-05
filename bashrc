@@ -175,3 +175,4 @@ source $BASH_IT/bash_it.sh
 bind '"\t":menu-complete'
 
 echo ".bashrc"
+source /opt/ros/indigo/setup.bash
