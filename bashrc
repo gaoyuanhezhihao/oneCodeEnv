@@ -120,15 +120,15 @@ alias tmux="tmux -2"
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-source ~/.usrScript/sourceAll.sh
+source ~/oneCodeEnv/scripts/sourceAll.sh
 
 alias clipc='xclip -selection clipboard'
 alias clipp='xclip -selection clipboard -o'
 ## TMUX
-if which tmux >/dev/null 2>&1; then
-    #if not inside a tmux session, and if no session is started, start a new session
-    test -z "$TMUX" && (tmux attach || tmux new-session)
-fi
+#if which tmux >/dev/null 2>&1; then
+    ##if not inside a tmux session, and if no session is started, start a new session
+    #test -z "$TMUX" && (tmux attach || tmux new-session)
+#fi
 
 # Path to the bash it configuration
 export BASH_IT="/home/hzh/.bash_it"
@@ -174,4 +174,8 @@ source $BASH_IT/bash_it.sh
 
 bind '"\t":menu-complete'
 
-echo ".bashrc"
+#echo ".bashrc"
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/home/hzh/anaconda3/bin:$PATH"
+source ~/oneCodeEnv/shell/env.sh
