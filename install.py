@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     os.system("git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim")
     os.makedirs('~/bin', exist_ok=True)
-    install_scripts = glob("./install/*")
+    install_scripts = glob("./install/*.sh")
     for scrp in install_scripts:
         os.system("sh "+scrp)
     # os.symlink(cwd+"/bashrc", home+"/.bashrc")

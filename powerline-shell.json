@@ -5,9 +5,11 @@
     "hostname", 
     "cwd", 
     "ssh", 
-    "git", 
     "jobs", 
     "newline",
     "root"
-  ]
+  ],
+
+    "mode":"compatible",
+    "theme":"basic"
 }

@@ -1,12 +1,15 @@
 #!/bin/bash
 echo "installing tmux"
-mkdir -p $HOME/bin/tmux
-$INSTALL_DIR=$HOME/bin/tmux
+mkdir -p $HOME/bin
+INSTALL_DIR=$HOME/bin
 
-wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz
-wget https://github.com/downloads/libevent/libevent/libevent-2.0.20-stable.tar.gz
-wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz
+echo "install directory:"
+echo $INSTALL_DIR
+wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz -P /tmp
+wget https://github.com/downloads/libevent/libevent/libevent-2.0.20-stable.tar.gz -P /tmp
+wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz -P /tmp
 # libevent 
+cd /tmp
 tar -xvzf libevent-2.0.20-stable.tar.gz
 cd libevent-2.0.20-stable
 ./configure --prefix=$INSTALL_DIR --disable-shared
