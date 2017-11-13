@@ -119,11 +119,10 @@ alias tmux="tmux -2"
 #xmodmap -pke > ~/.xmodmap
 
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-source ~/oneCodeEnv/scripts/sourceAll.sh
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-alias clipc='xclip -selection clipboard'
-alias clipp='xclip -selection clipboard -o'
+#alias clipc='xclip -selection clipboard'
+#alias clipp='xclip -selection clipboard -o'
 ## TMUX
 #if which tmux >/dev/null 2>&1; then
     ##if not inside a tmux session, and if no session is started, start a new session
@@ -131,32 +130,31 @@ alias clipp='xclip -selection clipboard -o'
 #fi
 
 # Path to the bash it configuration
-export BASH_IT="/home/hzh/.bash_it"
+#export BASH_IT="/home/hzh/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='bakke'
+#export BASH_IT_THEME='bakke'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
 # export BASH_IT_REMOTE='bash-it'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+#export GIT_HOSTING='git@git.domain.com'
 
-# Don't check mail when opening terminal.
-unset MAILCHECK
+## Don't check mail when opening terminal.
+#unset MAILCHECK
 
-# Change this to your console based IRC client of choice.
-export IRC_CLIENT='irssi'
+## Change this to your console based IRC client of choice.
+#export IRC_CLIENT='irssi'
 
-# Set this to the command you use for todo.txt-cli
-export TODO="t"
+## Set this to the command you use for todo.txt-cli
 
-# Set this to false to turn off version control status checking within the prompt for all themes
-export SCM_CHECK=true
+## Set this to false to turn off version control status checking within the prompt for all themes
+#export SCM_CHECK=true
 
-# Set Xterm/screen/Tmux title with only a short hostname.
+## Set Xterm/screen/Tmux title with only a short hostname.
 # Uncomment this (or set SHORT_HOSTNAME to something else),
 # Will otherwise fall back on $HOSTNAME.
 #export SHORT_HOSTNAME=$(hostname -s)
@@ -170,12 +168,21 @@ export SCM_CHECK=true
 # export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Load Bash It
-source $BASH_IT/bash_it.sh
+#source $BASH_IT/bash_it.sh
 
-bind '"\t":menu-complete'
+#bind '"\t":menu-complete'
 
 #echo ".bashrc"
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/home/hzh/anaconda3/bin:$PATH"
+export PATH=$HOME/bin:$PATH
 source ~/oneCodeEnv/shell/env.sh
+source ~/oneCodeEnv/scripts/sourceAll.sh
+function _update_ps1() {
+    PS1="$(powerline-shell $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi

@@ -3953,7 +3953,7 @@ __gnu_pbds::cc_hash_max_collision_check_resize_trigger	/usr/include/c++/4.8/ext/
 __gnu_pbds::cc_hash_max_collision_check_resize_trigger::calc_max_num_coll	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    calc_max_num_coll();$/;"	p	class:__gnu_pbds::cc_hash_max_collision_check_resize_trigger	access:private	signature:()
 __gnu_pbds::cc_hash_max_collision_check_resize_trigger::calc_resize_needed	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    calc_resize_needed();$/;"	p	class:__gnu_pbds::cc_hash_max_collision_check_resize_trigger	access:private	signature:()
 __gnu_pbds::cc_hash_max_collision_check_resize_trigger::cc_hash_max_collision_check_resize_trigger	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    cc_hash_max_collision_check_resize_trigger(float load = 0.5);$/;"	p	class:__gnu_pbds::cc_hash_max_collision_check_resize_trigger	access:public	signature:(float load = 0.5)
-__gnu_pbds::cc_hash_max_collision_check_resize_trigger::external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::cc_hash_max_collision_check_resize_trigger::__anon27
+__gnu_pbds::cc_hash_max_collision_check_resize_trigger::external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::cc_hash_max_collision_check_resize_trigger::__anon2
 __gnu_pbds::cc_hash_max_collision_check_resize_trigger::get_load	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    get_load() const;$/;"	p	class:__gnu_pbds::cc_hash_max_collision_check_resize_trigger	access:public	signature:() const
 __gnu_pbds::cc_hash_max_collision_check_resize_trigger::is_grow_needed	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    is_grow_needed(size_type size, size_type num_entries) const;$/;"	p	class:__gnu_pbds::cc_hash_max_collision_check_resize_trigger	access:protected	signature:(size_type size, size_type num_entries) const
 __gnu_pbds::cc_hash_max_collision_check_resize_trigger::is_resize_needed	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    is_resize_needed() const;$/;"	p	class:__gnu_pbds::cc_hash_max_collision_check_resize_trigger	access:protected	signature:() const
@@ -4008,11 +4008,11 @@ __gnu_pbds::container_traits	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^
 __gnu_pbds::container_traits::base_type	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef container_traits_base<container_category>  base_type;$/;"	t	struct:__gnu_pbds::container_traits	access:public
 __gnu_pbds::container_traits::container_category	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef typename Cntnr::container_category         container_category;$/;"	t	struct:__gnu_pbds::container_traits	access:public
 __gnu_pbds::container_traits::container_type	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef Cntnr 				       container_type;$/;"	t	struct:__gnu_pbds::container_traits	access:public
-__gnu_pbds::container_traits::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = base_type::erase_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon41
+__gnu_pbds::container_traits::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = base_type::erase_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon16
 __gnu_pbds::container_traits::invalidation_guarantee	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef typename base_type::invalidation_guarantee invalidation_guarantee;$/;"	t	struct:__gnu_pbds::container_traits	access:public
-__gnu_pbds::container_traits::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = base_type::order_preserving,$/;"	e	enum:__gnu_pbds::container_traits::__anon41
-__gnu_pbds::container_traits::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = base_type::reverse_iteration$/;"	e	enum:__gnu_pbds::container_traits::__anon41
-__gnu_pbds::container_traits::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = base_type::split_join_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon41
+__gnu_pbds::container_traits::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = base_type::order_preserving,$/;"	e	enum:__gnu_pbds::container_traits::__anon16
+__gnu_pbds::container_traits::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = base_type::reverse_iteration$/;"	e	enum:__gnu_pbds::container_traits::__anon16
+__gnu_pbds::container_traits::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = base_type::split_join_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon16
 __gnu_pbds::container_traits_base	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  struct container_traits_base<binary_heap_tag>$/;"	s	namespace:__gnu_pbds
 __gnu_pbds::container_traits_base	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  struct container_traits_base<binomial_heap_tag>$/;"	s	namespace:__gnu_pbds
 __gnu_pbds::container_traits_base	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  struct container_traits_base<cc_hash_tag>$/;"	s	namespace:__gnu_pbds
@@ -4037,57 +4037,57 @@ __gnu_pbds::container_traits_base::container_category	/usr/include/c++/4.8/ext/p
 __gnu_pbds::container_traits_base::container_category	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef rc_binomial_heap_tag 			container_category;$/;"	t	struct:__gnu_pbds::container_traits_base	access:public
 __gnu_pbds::container_traits_base::container_category	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef splay_tree_tag 				container_category;$/;"	t	struct:__gnu_pbds::container_traits_base	access:public
 __gnu_pbds::container_traits_base::container_category	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef thin_heap_tag 				container_category;$/;"	t	struct:__gnu_pbds::container_traits_base	access:public
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
-__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
+__gnu_pbds::container_traits_base::erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
 __gnu_pbds::container_traits_base::invalidation_guarantee	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef basic_invalidation_guarantee 		invalidation_guarantee;$/;"	t	struct:__gnu_pbds::container_traits_base	access:public
 __gnu_pbds::container_traits_base::invalidation_guarantee	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef point_invalidation_guarantee 		invalidation_guarantee;$/;"	t	struct:__gnu_pbds::container_traits_base	access:public
 __gnu_pbds::container_traits_base::invalidation_guarantee	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^    typedef range_invalidation_guarantee 		invalidation_guarantee;$/;"	t	struct:__gnu_pbds::container_traits_base	access:public
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
-__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
-__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
+__gnu_pbds::container_traits_base::order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+__gnu_pbds::container_traits_base::reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
+__gnu_pbds::container_traits_base::split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
 __gnu_pbds::detail	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp	/^  namespace detail$/;"	n	namespace:__gnu_pbds
 __gnu_pbds::detail	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/node_iterators.hpp	/^  namespace detail$/;"	n	namespace:__gnu_pbds
 __gnu_pbds::detail	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/point_iterators.hpp	/^  namespace detail$/;"	n	namespace:__gnu_pbds
@@ -4377,8 +4377,8 @@ __gnu_pbds::detail::PB_DS_CC_HASH_NAME::s_entry_pointer_allocator	/usr/include/c
 __gnu_pbds::detail::PB_DS_CC_HASH_NAME::s_find_end_it	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      static point_iterator 		s_find_end_it;$/;"	m	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:private
 __gnu_pbds::detail::PB_DS_CC_HASH_NAME::size	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      size() const;$/;"	p	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:public	signature:() const
 __gnu_pbds::detail::PB_DS_CC_HASH_NAME::size_type	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      typedef typename _Alloc::size_type 	size_type;$/;"	t	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:public
-__gnu_pbds::detail::PB_DS_CC_HASH_NAME::store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon14
-__gnu_pbds::detail::PB_DS_CC_HASH_NAME::store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon15
+__gnu_pbds::detail::PB_DS_CC_HASH_NAME::store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon18
+__gnu_pbds::detail::PB_DS_CC_HASH_NAME::store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon19
 __gnu_pbds::detail::PB_DS_CC_HASH_NAME::subscript_imp	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      subscript_imp(key_const_reference r_key, false_type)$/;"	f	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:private	signature:(key_const_reference r_key, false_type)
 __gnu_pbds::detail::PB_DS_CC_HASH_NAME::subscript_imp	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      subscript_imp(key_const_reference r_key, true_type)$/;"	f	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:private	signature:(key_const_reference r_key, true_type)
 __gnu_pbds::detail::PB_DS_CC_HASH_NAME::swap	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      swap(PB_DS_CLASS_C_DEC&);$/;"	p	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:public	signature:(PB_DS_CLASS_C_DEC&)
@@ -4579,8 +4579,8 @@ __gnu_pbds::detail::PB_DS_GP_HASH_NAME::s_end_it	/usr/include/c++/4.8/ext/pb_ds/
 __gnu_pbds::detail::PB_DS_GP_HASH_NAME::s_entry_allocator	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      static entry_allocator 	s_entry_allocator;$/;"	m	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:private
 __gnu_pbds::detail::PB_DS_GP_HASH_NAME::size	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      size() const;$/;"	p	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:public	signature:() const
 __gnu_pbds::detail::PB_DS_GP_HASH_NAME::size_type	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      typedef typename _Alloc::size_type 	size_type;$/;"	t	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:public
-__gnu_pbds::detail::PB_DS_GP_HASH_NAME::store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon2
-__gnu_pbds::detail::PB_DS_GP_HASH_NAME::store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon3
+__gnu_pbds::detail::PB_DS_GP_HASH_NAME::store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon25
+__gnu_pbds::detail::PB_DS_GP_HASH_NAME::store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon26
 __gnu_pbds::detail::PB_DS_GP_HASH_NAME::subscript_imp	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      subscript_imp(key_const_reference key, false_type)$/;"	f	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:private	signature:(key_const_reference key, false_type)
 __gnu_pbds::detail::PB_DS_GP_HASH_NAME::subscript_imp	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      subscript_imp(key_const_reference key, true_type)$/;"	f	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:private	signature:(key_const_reference key, true_type)
 __gnu_pbds::detail::PB_DS_GP_HASH_NAME::swap	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      swap(PB_DS_CLASS_C_DEC&);$/;"	p	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:public	signature:(PB_DS_CLASS_C_DEC&)
@@ -5084,7 +5084,7 @@ __gnu_pbds::detail::PB_DS_S_TREE_NAME::swap	/usr/include/c++/4.8/ext/pb_ds/detai
 __gnu_pbds::detail::PB_DS_S_TREE_NAME::value_type	/usr/include/c++/4.8/ext/pb_ds/detail/splay_tree_/splay_tree_.hpp	/^      typedef typename base_type::value_type 		 value_type;$/;"	t	class:__gnu_pbds::detail::PB_DS_S_TREE_NAME	access:public
 __gnu_pbds::detail::__static_assert	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    struct __static_assert<true>$/;"	s	namespace:__gnu_pbds::detail
 __gnu_pbds::detail::__static_assert_dumclass	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    struct __static_assert_dumclass$/;"	s	namespace:__gnu_pbds::detail
-__gnu_pbds::detail::__static_assert_dumclass::v	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  v = 1$/;"	e	enum:__gnu_pbds::detail::__static_assert_dumclass::__anon22
+__gnu_pbds::detail::__static_assert_dumclass::v	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  v = 1$/;"	e	enum:__gnu_pbds::detail::__static_assert_dumclass::__anon37
 __gnu_pbds::detail::bin_search_tree_const_it_	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/point_iterators.hpp	/^    class bin_search_tree_const_it_$/;"	c	namespace:__gnu_pbds::detail
 __gnu_pbds::detail::bin_search_tree_const_it_::bin_search_tree_const_it_	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/point_iterators.hpp	/^      bin_search_tree_const_it_(const Node_Pointer p_nd = 0) $/;"	f	class:__gnu_pbds::detail::bin_search_tree_const_it_	access:public	signature:(const Node_Pointer p_nd = 0)
 __gnu_pbds::detail::bin_search_tree_const_it_::bin_search_tree_const_it_	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/point_iterators.hpp	/^      bin_search_tree_const_it_(const PB_DS_TREE_CONST_ODIR_IT_C_DEC& other) $/;"	f	class:__gnu_pbds::detail::bin_search_tree_const_it_	access:public	signature:(const PB_DS_TREE_CONST_ODIR_IT_C_DEC& other)
@@ -5227,7 +5227,7 @@ __gnu_pbds::detail::binary_heap::right_child	/usr/include/c++/4.8/ext/pb_ds/deta
 __gnu_pbds::detail::binary_heap::s_entry_allocator	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      static entry_allocator 	s_entry_allocator;$/;"	m	class:__gnu_pbds::detail::binary_heap	access:private
 __gnu_pbds::detail::binary_heap::s_no_throw_copies_ind	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      static no_throw_copies_t 	s_no_throw_copies_ind;$/;"	m	class:__gnu_pbds::detail::binary_heap	access:private
 __gnu_pbds::detail::binary_heap::s_value_allocator	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      static value_allocator 	s_value_allocator;$/;"	m	class:__gnu_pbds::detail::binary_heap	access:private
-__gnu_pbds::detail::binary_heap::simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^	  simple_value = is_simple<value_type>::value$/;"	e	enum:__gnu_pbds::detail::binary_heap::__anon11
+__gnu_pbds::detail::binary_heap::simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^	  simple_value = is_simple<value_type>::value$/;"	e	enum:__gnu_pbds::detail::binary_heap::__anon22
 __gnu_pbds::detail::binary_heap::size	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      size() const;$/;"	p	class:__gnu_pbds::detail::binary_heap	access:public	signature:() const
 __gnu_pbds::detail::binary_heap::size_type	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      typedef typename _Alloc::size_type 		size_type;$/;"	t	class:__gnu_pbds::detail::binary_heap	access:public
 __gnu_pbds::detail::binary_heap::split	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^	split(Pred, binary_heap&);$/;"	p	class:__gnu_pbds::detail::binary_heap	access:public	signature:(Pred, binary_heap&)
@@ -5490,7 +5490,7 @@ __gnu_pbds::detail::default_resize_policy::size_policy_type	/usr/include/c++/4.8
 __gnu_pbds::detail::default_resize_policy::size_type	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^      typedef typename Comb_Hash_Fn::size_type 			size_type;$/;"	t	struct:__gnu_pbds::detail::default_resize_policy	access:private
 __gnu_pbds::detail::default_resize_policy::trigger	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^      typedef hash_load_check_resize_trigger<false, size_type> 	trigger;$/;"	t	struct:__gnu_pbds::detail::default_resize_policy	access:private
 __gnu_pbds::detail::default_resize_policy::type	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^					  false, size_type> 	type;$/;"	t	struct:__gnu_pbds::detail::default_resize_policy	access:public
-__gnu_pbds::detail::default_store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^	default_store_hash = false$/;"	e	enum:__gnu_pbds::detail::__anon1
+__gnu_pbds::detail::default_store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^	default_store_hash = false$/;"	e	enum:__gnu_pbds::detail::__anon28
 __gnu_pbds::detail::default_trie_access_traits	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^      struct default_trie_access_traits<__dtrie_string>$/;"	s	namespace:__gnu_pbds::detail
 __gnu_pbds::detail::default_trie_access_traits::string_type	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^	typedef __dtrie_string					string_type;$/;"	t	struct:__gnu_pbds::detail::default_trie_access_traits	access:private
 __gnu_pbds::detail::default_trie_access_traits::type	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^	typedef trie_string_access_traits<string_type> 		type;$/;"	t	struct:__gnu_pbds::detail::default_trie_access_traits	access:public
@@ -5546,17 +5546,17 @@ __gnu_pbds::detail::hash_load_check_resize_trigger_size_base::size_type	/usr/inc
 __gnu_pbds::detail::hash_load_check_resize_trigger_size_base::swap	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_load_check_resize_trigger_size_base.hpp	/^      swap(hash_load_check_resize_trigger_size_base& other) { }$/;"	f	class:__gnu_pbds::detail::hash_load_check_resize_trigger_size_base	access:protected	signature:(hash_load_check_resize_trigger_size_base& other)
 __gnu_pbds::detail::hash_load_check_resize_trigger_size_base::swap	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_load_check_resize_trigger_size_base.hpp	/^      swap(hash_load_check_resize_trigger_size_base& other)$/;"	f	class:__gnu_pbds::detail::hash_load_check_resize_trigger_size_base	access:protected	signature:(hash_load_check_resize_trigger_size_base& other)
 __gnu_pbds::detail::is_const_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    struct is_const_pointer$/;"	s	namespace:__gnu_pbds::detail
-__gnu_pbds::detail::is_const_pointer::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_pointer<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_pointer::__anon16
+__gnu_pbds::detail::is_const_pointer::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_pointer<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_pointer::__anon31
 __gnu_pbds::detail::is_const_reference	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    struct is_const_reference$/;"	s	namespace:__gnu_pbds::detail
-__gnu_pbds::detail::is_const_reference::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_reference<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_reference::__anon17
+__gnu_pbds::detail::is_const_reference::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_reference<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_reference::__anon32
 __gnu_pbds::detail::is_pair	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    class is_pair$/;"	c	namespace:__gnu_pbds::detail
 __gnu_pbds::detail::is_pair::is_pair_imp	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^      struct is_pair_imp$/;"	s	class:__gnu_pbds::detail::is_pair	access:private
 __gnu_pbds::detail::is_pair::is_pair_imp	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^      struct is_pair_imp<std::pair<U,V> >$/;"	s	class:__gnu_pbds::detail::is_pair	access:private
-__gnu_pbds::detail::is_pair::is_pair_imp::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 0$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon19
-__gnu_pbds::detail::is_pair::is_pair_imp::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 1$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon20
-__gnu_pbds::detail::is_pair::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_pair_imp<T>::value$/;"	e	enum:__gnu_pbds::detail::is_pair::__anon21
+__gnu_pbds::detail::is_pair::is_pair_imp::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 0$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon34
+__gnu_pbds::detail::is_pair::is_pair_imp::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 1$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon35
+__gnu_pbds::detail::is_pair::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_pair_imp<T>::value$/;"	e	enum:__gnu_pbds::detail::is_pair::__anon36
 __gnu_pbds::detail::is_simple	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    struct is_simple$/;"	s	namespace:__gnu_pbds::detail
-__gnu_pbds::detail::is_simple::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_fundamental<typename remove_const<T>::type>::value $/;"	e	enum:__gnu_pbds::detail::is_simple::__anon18
+__gnu_pbds::detail::is_simple::value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_fundamental<typename remove_const<T>::type>::value $/;"	e	enum:__gnu_pbds::detail::is_simple::__anon33
 __gnu_pbds::detail::left_child_next_sibling_heap	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^    class left_child_next_sibling_heap : public Cmp_Fn$/;"	c	namespace:__gnu_pbds::detail	inherits:Cmp_Fn
 __gnu_pbds::detail::left_child_next_sibling_heap::__rebind_v	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      typedef typename _Alloc::template rebind<Value_Type>	__rebind_v;$/;"	t	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:private
 __gnu_pbds::detail::left_child_next_sibling_heap::actual_erase_node	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      actual_erase_node(node_pointer);$/;"	p	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:protected	signature:(node_pointer)
@@ -5609,7 +5609,7 @@ __gnu_pbds::detail::left_child_next_sibling_heap::recursive_copy_node	/usr/inclu
 __gnu_pbds::detail::left_child_next_sibling_heap::reference	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      typedef typename __rebind_v::other::reference	reference;$/;"	t	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:public
 __gnu_pbds::detail::left_child_next_sibling_heap::s_no_throw_copies_ind	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      static no_throw_copies_t 	s_no_throw_copies_ind;$/;"	m	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:private
 __gnu_pbds::detail::left_child_next_sibling_heap::s_node_allocator	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      static node_allocator 	s_node_allocator;$/;"	m	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:private
-__gnu_pbds::detail::left_child_next_sibling_heap::simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^	  simple_value = is_simple<Value_Type>::value$/;"	e	enum:__gnu_pbds::detail::left_child_next_sibling_heap::__anon9
+__gnu_pbds::detail::left_child_next_sibling_heap::simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^	  simple_value = is_simple<Value_Type>::value$/;"	e	enum:__gnu_pbds::detail::left_child_next_sibling_heap::__anon27
 __gnu_pbds::detail::left_child_next_sibling_heap::size	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      size() const;$/;"	p	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:public	signature:() const
 __gnu_pbds::detail::left_child_next_sibling_heap::size_from_node	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      size_from_node(node_const_pointer);$/;"	p	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:private	signature:(node_const_pointer)
 __gnu_pbds::detail::left_child_next_sibling_heap::size_type	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^      typedef typename _Alloc::size_type 		size_type;$/;"	t	class:__gnu_pbds::detail::left_child_next_sibling_heap	access:public
@@ -5705,7 +5705,7 @@ __gnu_pbds::detail::no_throw_copies	/usr/include/c++/4.8/ext/pb_ds/detail/types_
 __gnu_pbds::detail::no_throw_copies::__simple	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^	static const bool __simple = is_simple<Key>::value$/;"	m	struct:__gnu_pbds::detail::no_throw_copies	access:public
 __gnu_pbds::detail::no_throw_copies::indicator	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^	typedef integral_constant<int, __simple> 	       	indicator;$/;"	t	struct:__gnu_pbds::detail::no_throw_copies	access:public
 __gnu_pbds::detail::no_throw_copies::indicator	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^	typedef integral_constant<int, is_simple<Key>::value> 	indicator;$/;"	t	struct:__gnu_pbds::detail::no_throw_copies	access:public
-__gnu_pbds::detail::num_distinct_rank_bounds	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	num_distinct_rank_bounds = 48$/;"	e	enum:__gnu_pbds::detail::__anon8
+__gnu_pbds::detail::num_distinct_rank_bounds	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	num_distinct_rank_bounds = 48$/;"	e	enum:__gnu_pbds::detail::__anon30
 __gnu_pbds::detail::operator <<	/usr/include/c++/4.8/ext/pb_ds/detail/debug_map_base.hpp	/^    operator<<(std::basic_ostream<_CharT, _Traits>& __out,$/;"	f	namespace:__gnu_pbds::detail	signature:(std::basic_ostream<_CharT, _Traits>& __out, const std::pair<_Tp1, _Tp2>& p)
 __gnu_pbds::detail::ov_tree_node_const_it_	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/node_iterators.hpp	/^    class ov_tree_node_const_it_$/;"	c	namespace:__gnu_pbds::detail
 __gnu_pbds::detail::ov_tree_node_const_it_::const_metadata_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/node_iterators.hpp	/^      const_metadata_pointer;$/;"	t	class:__gnu_pbds::detail::ov_tree_node_const_it_	access:protected
@@ -5852,7 +5852,7 @@ __gnu_pbds::detail::pat_trie_base::_Inode::a_const_pointer	/usr/include/c++/4.8/
 __gnu_pbds::detail::pat_trie_base::_Inode::access_traits	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      typedef typename base_type::access_traits	       		access_traits;$/;"	t	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public
 __gnu_pbds::detail::pat_trie_base::_Inode::add_child	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      add_child(node_pointer, a_const_iterator, a_const_iterator,$/;"	p	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public	signature:(node_pointer, a_const_iterator, a_const_iterator, a_const_pointer)
 __gnu_pbds::detail::pat_trie_base::_Inode::allocator_type	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      typedef _Alloc						allocator_type;$/;"	t	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public
-__gnu_pbds::detail::pat_trie_base::_Inode::arr_size	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^	  arr_size = _ATraits::max_size + 1$/;"	e	enum:__gnu_pbds::detail::pat_trie_base::_Inode::__anon5
+__gnu_pbds::detail::pat_trie_base::_Inode::arr_size	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^	  arr_size = _ATraits::max_size + 1$/;"	e	enum:__gnu_pbds::detail::pat_trie_base::_Inode::__anon23
 __gnu_pbds::detail::pat_trie_base::_Inode::assert_valid_imp	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      assert_valid_imp(a_const_pointer, const char*, int) const;$/;"	p	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public	signature:(a_const_pointer, const char*, int) const
 __gnu_pbds::detail::pat_trie_base::_Inode::base_type	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      typedef _Node_base<_ATraits, Metadata> 			base_type;$/;"	t	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public
 __gnu_pbds::detail::pat_trie_base::_Inode::begin	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      begin() const;$/;"	p	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public	signature:() const
@@ -6124,7 +6124,7 @@ __gnu_pbds::detail::rc::entry_const_pointer	/usr/include/c++/4.8/ext/pb_ds/detai
 __gnu_pbds::detail::rc::entry_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^      typedef typename __rebind_np::other::pointer 	 entry_pointer;$/;"	t	class:__gnu_pbds::detail::rc	access:private
 __gnu_pbds::detail::rc::m_a_entries	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^      node_pointer 	m_a_entries[max_entries];$/;"	m	class:__gnu_pbds::detail::rc	access:private
 __gnu_pbds::detail::rc::m_over_top	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^      size_type 	m_over_top;$/;"	m	class:__gnu_pbds::detail::rc	access:private
-__gnu_pbds::detail::rc::max_entries	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^	  max_entries = sizeof(size_type) << 3$/;"	e	enum:__gnu_pbds::detail::rc::__anon4
+__gnu_pbds::detail::rc::max_entries	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^	  max_entries = sizeof(size_type) << 3$/;"	e	enum:__gnu_pbds::detail::rc::__anon24
 __gnu_pbds::detail::rc::node	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^      typedef _Node 					 node;$/;"	t	class:__gnu_pbds::detail::rc	access:private
 __gnu_pbds::detail::rc::node_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^      typedef typename __rebind_n::other::pointer      	 node_pointer;$/;"	t	class:__gnu_pbds::detail::rc	access:private
 __gnu_pbds::detail::rc::pop	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^      pop();$/;"	p	class:__gnu_pbds::detail::rc	access:public	signature:()
@@ -6186,7 +6186,7 @@ __gnu_pbds::detail::rc_binomial_heap::~rc_binomial_heap	/usr/include/c++/4.8/ext
 __gnu_pbds::detail::resize_policy	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^    class resize_policy$/;"	c	namespace:__gnu_pbds::detail
 __gnu_pbds::detail::resize_policy::assert_valid	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      assert_valid(const char*, int) const;$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:(const char*, int) const
 __gnu_pbds::detail::resize_policy::assert_valid	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^    assert_valid(const char* __file, int __line) const$/;"	f	class:__gnu_pbds::detail::resize_policy	signature:(const char* __file, int __line) const
-__gnu_pbds::detail::resize_policy::factor	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  factor = 2$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon10
+__gnu_pbds::detail::resize_policy::factor	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  factor = 2$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon21
 __gnu_pbds::detail::resize_policy::get_new_size_for_arbitrary	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      get_new_size_for_arbitrary(size_type) const;$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:(size_type) const
 __gnu_pbds::detail::resize_policy::get_new_size_for_arbitrary	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^    get_new_size_for_arbitrary(size_type size) const$/;"	f	class:__gnu_pbds::detail::resize_policy	signature:(size_type size) const
 __gnu_pbds::detail::resize_policy::get_new_size_for_grow	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      get_new_size_for_grow() const;$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:() const
@@ -6204,7 +6204,7 @@ __gnu_pbds::detail::resize_policy::notify_grow_resize	/usr/include/c++/4.8/ext/p
 __gnu_pbds::detail::resize_policy::notify_grow_resize	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^    notify_grow_resize()$/;"	f	class:__gnu_pbds::detail::resize_policy	signature:()
 __gnu_pbds::detail::resize_policy::notify_shrink_resize	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      notify_shrink_resize();$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:()
 __gnu_pbds::detail::resize_policy::notify_shrink_resize	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^    notify_shrink_resize()$/;"	f	class:__gnu_pbds::detail::resize_policy	signature:()
-__gnu_pbds::detail::resize_policy::ratio	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  ratio = 8,$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon10
+__gnu_pbds::detail::resize_policy::ratio	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  ratio = 8,$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon21
 __gnu_pbds::detail::resize_policy::resize_needed_for_grow	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      resize_needed_for_grow(size_type) const;$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:(size_type) const
 __gnu_pbds::detail::resize_policy::resize_needed_for_grow	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^    resize_needed_for_grow(size_type size) const$/;"	f	class:__gnu_pbds::detail::resize_policy	signature:(size_type size) const
 __gnu_pbds::detail::resize_policy::resize_needed_for_shrink	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      resize_needed_for_shrink(size_type) const;$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:(size_type) const
@@ -6295,7 +6295,7 @@ __gnu_pbds::detail::thin_heap::make_child_of	/usr/include/c++/4.8/ext/pb_ds/deta
 __gnu_pbds::detail::thin_heap::make_from_aux	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      make_from_aux();$/;"	p	class:__gnu_pbds::detail::thin_heap	access:private	signature:()
 __gnu_pbds::detail::thin_heap::make_root	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      make_root(node_pointer);$/;"	p	class:__gnu_pbds::detail::thin_heap	access:private	signature:(node_pointer)
 __gnu_pbds::detail::thin_heap::make_root_and_link	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      make_root_and_link(node_pointer);$/;"	p	class:__gnu_pbds::detail::thin_heap	access:private	signature:(node_pointer)
-__gnu_pbds::detail::thin_heap::max_rank	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	  max_rank = (sizeof(size_type) << 4) + 2$/;"	e	enum:__gnu_pbds::detail::thin_heap::__anon7
+__gnu_pbds::detail::thin_heap::max_rank	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	  max_rank = (sizeof(size_type) << 4) + 2$/;"	e	enum:__gnu_pbds::detail::thin_heap::__anon29
 __gnu_pbds::detail::thin_heap::modify	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      modify(point_iterator, const_reference);$/;"	p	class:__gnu_pbds::detail::thin_heap	access:public	signature:(point_iterator, const_reference)
 __gnu_pbds::detail::thin_heap::node	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      typedef typename base_type::node 			node;$/;"	t	class:__gnu_pbds::detail::thin_heap	access:protected
 __gnu_pbds::detail::thin_heap::node_const_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      typedef typename base_type::node_const_pointer 	node_const_pointer;$/;"	t	class:__gnu_pbds::detail::thin_heap	access:protected
@@ -6329,7 +6329,7 @@ __gnu_pbds::detail::tree_node_metadata_dispatch	/usr/include/c++/4.8/ext/pb_ds/d
 __gnu_pbds::detail::tree_node_metadata_dispatch::__it_type	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^      typedef dumnode_const_iterator<Key, Data, _Alloc>		__it_type;$/;"	t	struct:__gnu_pbds::detail::tree_node_metadata_dispatch	access:private
 __gnu_pbds::detail::tree_node_metadata_dispatch::__nnode_u	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^      typedef null_node_update<__it_type, __it_type, Cmp_Fn, _Alloc> __nnode_u;$/;"	t	struct:__gnu_pbds::detail::tree_node_metadata_dispatch	access:private
 __gnu_pbds::detail::tree_node_metadata_dispatch::__node_u	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^      typedef Node_Update<__it_type, __it_type, Cmp_Fn, _Alloc>	__node_u;$/;"	t	struct:__gnu_pbds::detail::tree_node_metadata_dispatch	access:private
-__gnu_pbds::detail::tree_node_metadata_dispatch::null_update	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::tree_node_metadata_dispatch::__anon23
+__gnu_pbds::detail::tree_node_metadata_dispatch::null_update	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::tree_node_metadata_dispatch::__anon17
 __gnu_pbds::detail::tree_node_metadata_dispatch::type	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^      typedef typename tree_metadata_helper<__node_u, null_update>::type type;$/;"	t	struct:__gnu_pbds::detail::tree_node_metadata_dispatch	access:public
 __gnu_pbds::detail::tree_trace_base	/usr/include/c++/4.8/ext/pb_ds/detail/tree_trace_base.hpp	/^    class tree_trace_base : private PB_DS_TRACE_BASE$/;"	c	namespace:__gnu_pbds::detail	inherits:PB_DS_TRACE_BASE
 __gnu_pbds::detail::tree_trace_base::base_type	/usr/include/c++/4.8/ext/pb_ds/detail/tree_trace_base.hpp	/^      typedef PB_DS_TRACE_BASE 			base_type;$/;"	t	class:__gnu_pbds::detail::tree_trace_base	access:private
@@ -6364,7 +6364,7 @@ __gnu_pbds::detail::trie_node_metadata_dispatch	/usr/include/c++/4.8/ext/pb_ds/d
 __gnu_pbds::detail::trie_node_metadata_dispatch::__it_type	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^      typedef dumnode_const_iterator<Key, Data, _Alloc>		__it_type;$/;"	t	struct:__gnu_pbds::detail::trie_node_metadata_dispatch	access:private
 __gnu_pbds::detail::trie_node_metadata_dispatch::__nnode_u	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^      typedef null_node_update<__it_type, __it_type, Cmp_Fn, _Alloc> __nnode_u;$/;"	t	struct:__gnu_pbds::detail::trie_node_metadata_dispatch	access:private
 __gnu_pbds::detail::trie_node_metadata_dispatch::__node_u	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^      typedef Node_Update<__it_type, __it_type, Cmp_Fn, _Alloc>	__node_u;$/;"	t	struct:__gnu_pbds::detail::trie_node_metadata_dispatch	access:private
-__gnu_pbds::detail::trie_node_metadata_dispatch::null_update	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::trie_node_metadata_dispatch::__anon13
+__gnu_pbds::detail::trie_node_metadata_dispatch::null_update	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::trie_node_metadata_dispatch::__anon38
 __gnu_pbds::detail::trie_node_metadata_dispatch::type	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^      typedef typename trie_metadata_helper<__node_u, null_update>::type type;$/;"	t	struct:__gnu_pbds::detail::trie_node_metadata_dispatch	access:public
 __gnu_pbds::detail::trie_policy_base	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/trie_policy_base.hpp	/^    class trie_policy_base$/;"	c	namespace:__gnu_pbds::detail	inherits:branch_policy
 __gnu_pbds::detail::trie_policy_base::access_traits	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/trie_policy_base.hpp	/^      typedef _ATraits 				access_traits;$/;"	t	class:__gnu_pbds::detail::trie_policy_base	access:public
@@ -6522,7 +6522,7 @@ __gnu_pbds::hash_exponential_size_policy::swap	/usr/include/c++/4.8/ext/pb_ds/ha
 __gnu_pbds::hash_load_check_resize_trigger	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^  class hash_load_check_resize_trigger : private PB_DS_SIZE_BASE_C_DEC$/;"	c	namespace:__gnu_pbds	inherits:PB_DS_SIZE_BASE_C_DEC
 __gnu_pbds::hash_load_check_resize_trigger::assert_valid	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    assert_valid(const char* file, int line) const;$/;"	p	class:__gnu_pbds::hash_load_check_resize_trigger	access:private	signature:(const char* file, int line) const
 __gnu_pbds::hash_load_check_resize_trigger::do_resize	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    do_resize(size_type new_size);$/;"	p	class:__gnu_pbds::hash_load_check_resize_trigger	access:private	signature:(size_type new_size)
-__gnu_pbds::hash_load_check_resize_trigger::external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::hash_load_check_resize_trigger::__anon26
+__gnu_pbds::hash_load_check_resize_trigger::external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::hash_load_check_resize_trigger::__anon1
 __gnu_pbds::hash_load_check_resize_trigger::get_loads	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    get_loads() const;$/;"	p	class:__gnu_pbds::hash_load_check_resize_trigger	access:public	signature:() const
 __gnu_pbds::hash_load_check_resize_trigger::hash_load_check_resize_trigger	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    hash_load_check_resize_trigger(float load_min = 0.125,$/;"	p	class:__gnu_pbds::hash_load_check_resize_trigger	access:public	signature:(float load_min = 0.125, float load_max = 0.5)
 __gnu_pbds::hash_load_check_resize_trigger::is_grow_needed	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    is_grow_needed(size_type size, size_type num_entries) const;$/;"	p	class:__gnu_pbds::hash_load_check_resize_trigger	access:protected	signature:(size_type size, size_type num_entries) const
@@ -6560,7 +6560,7 @@ __gnu_pbds::hash_prime_size_policy::size_type	/usr/include/c++/4.8/ext/pb_ds/has
 __gnu_pbds::hash_prime_size_policy::swap	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    swap(PB_DS_CLASS_C_DEC& other);$/;"	p	class:__gnu_pbds::hash_prime_size_policy	access:public	signature:(PB_DS_CLASS_C_DEC& other)
 __gnu_pbds::hash_standard_resize_policy	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^  class hash_standard_resize_policy$/;"	c	namespace:__gnu_pbds	inherits:Size_Policy,Trigger_Policy
 __gnu_pbds::hash_standard_resize_policy::do_resize	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    do_resize(size_type new_size);$/;"	p	class:__gnu_pbds::hash_standard_resize_policy	access:private	signature:(size_type new_size)
-__gnu_pbds::hash_standard_resize_policy::external_size_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_size_access = External_Size_Access$/;"	e	enum:__gnu_pbds::hash_standard_resize_policy::__anon28
+__gnu_pbds::hash_standard_resize_policy::external_size_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_size_access = External_Size_Access$/;"	e	enum:__gnu_pbds::hash_standard_resize_policy::__anon3
 __gnu_pbds::hash_standard_resize_policy::get_actual_size	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    get_actual_size() const;$/;"	p	class:__gnu_pbds::hash_standard_resize_policy	access:public	signature:() const
 __gnu_pbds::hash_standard_resize_policy::get_new_size	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    get_new_size(size_type size, size_type num_used_e) const;$/;"	p	class:__gnu_pbds::hash_standard_resize_policy	access:protected	signature:(size_type size, size_type num_used_e) const
 __gnu_pbds::hash_standard_resize_policy::get_size_policy	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    get_size_policy() const;$/;"	p	class:__gnu_pbds::hash_standard_resize_policy	access:public	signature:() const
@@ -6615,7 +6615,7 @@ __gnu_pbds::lu_counter_policy	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.
 __gnu_pbds::lu_counter_policy::__rebind_m	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^      typedef typename _Alloc::template rebind<metadata_type> __rebind_m;$/;"	t	class:__gnu_pbds::lu_counter_policy	access:private
 __gnu_pbds::lu_counter_policy::allocator_type	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^      typedef _Alloc 					allocator_type;$/;"	t	class:__gnu_pbds::lu_counter_policy	access:public
 __gnu_pbds::lu_counter_policy::base_type	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^      typedef detail::lu_counter_policy_base<size_type> 	base_type;$/;"	t	class:__gnu_pbds::lu_counter_policy	access:private
-__gnu_pbds::lu_counter_policy::max_count	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^	  max_count = Max_Count$/;"	e	enum:__gnu_pbds::lu_counter_policy::__anon42
+__gnu_pbds::lu_counter_policy::max_count	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^	  max_count = Max_Count$/;"	e	enum:__gnu_pbds::lu_counter_policy::__anon40
 __gnu_pbds::lu_counter_policy::metadata_reference	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^      typedef typename __rebind_m::other::reference 	metadata_reference;$/;"	t	class:__gnu_pbds::lu_counter_policy	access:public
 __gnu_pbds::lu_counter_policy::metadata_type	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^      typedef detail::lu_counter_metadata<size_type> 	metadata_type;$/;"	t	class:__gnu_pbds::lu_counter_policy	access:public
 __gnu_pbds::lu_counter_policy::operator ()	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^      operator()() const$/;"	f	class:__gnu_pbds::lu_counter_policy	access:public	signature:() const
@@ -6759,7 +6759,7 @@ __gnu_pbds::sample_trie_access_traits::e_type	/usr/include/c++/4.8/ext/pb_ds/det
 __gnu_pbds::sample_trie_access_traits::end	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^    end(key_const_reference);$/;"	p	struct:__gnu_pbds::sample_trie_access_traits	access:public	signature:(key_const_reference)
 __gnu_pbds::sample_trie_access_traits::key_const_reference	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^    typedef typename __rebind_k::other::const_reference	key_const_reference;$/;"	t	struct:__gnu_pbds::sample_trie_access_traits	access:public
 __gnu_pbds::sample_trie_access_traits::key_type	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^    typedef std::string 			       	key_type;$/;"	t	struct:__gnu_pbds::sample_trie_access_traits	access:public
-__gnu_pbds::sample_trie_access_traits::max_size	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^	max_size = 4$/;"	e	enum:__gnu_pbds::sample_trie_access_traits::__anon12
+__gnu_pbds::sample_trie_access_traits::max_size	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^	max_size = 4$/;"	e	enum:__gnu_pbds::sample_trie_access_traits::__anon39
 __gnu_pbds::sample_trie_access_traits::size_type	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^    typedef std::size_t 		       		size_type;$/;"	t	struct:__gnu_pbds::sample_trie_access_traits	access:public
 __gnu_pbds::sample_trie_node_update	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_node_update.hpp	/^  class sample_trie_node_update$/;"	c	namespace:__gnu_pbds
 __gnu_pbds::sample_trie_node_update::metadata_type	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_node_update.hpp	/^    typedef std::size_t 		metadata_type;$/;"	t	class:__gnu_pbds::sample_trie_node_update	access:public
@@ -6898,10 +6898,10 @@ __gnu_pbds::trie_string_access_traits::end_imp	/usr/include/c++/4.8/ext/pb_ds/tr
 __gnu_pbds::trie_string_access_traits::end_imp	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    end_imp(key_const_reference, detail::true_type);$/;"	p	struct:__gnu_pbds::trie_string_access_traits	access:private	signature:(key_const_reference, detail::true_type)
 __gnu_pbds::trie_string_access_traits::key_const_reference	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    typedef typename __rebind_k::other::const_reference   key_const_reference;$/;"	t	struct:__gnu_pbds::trie_string_access_traits	access:public
 __gnu_pbds::trie_string_access_traits::key_type	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    typedef String 					  key_type;$/;"	t	struct:__gnu_pbds::trie_string_access_traits	access:public
-__gnu_pbds::trie_string_access_traits::max_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_e_val = Max_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon25
-__gnu_pbds::trie_string_access_traits::max_size	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_size = max_e_val - min_e_val + 1$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon25
-__gnu_pbds::trie_string_access_traits::min_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	min_e_val = Min_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon25
-__gnu_pbds::trie_string_access_traits::reverse	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	reverse = Reverse$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon24
+__gnu_pbds::trie_string_access_traits::max_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_e_val = Max_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon42
+__gnu_pbds::trie_string_access_traits::max_size	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_size = max_e_val - min_e_val + 1$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon42
+__gnu_pbds::trie_string_access_traits::min_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	min_e_val = Min_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon42
+__gnu_pbds::trie_string_access_traits::reverse	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	reverse = Reverse$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon41
 __gnu_pbds::trie_string_access_traits::s_rev_ind	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    static detail::integral_constant<int, Reverse> s_rev_ind;$/;"	m	struct:__gnu_pbds::trie_string_access_traits	access:private
 __gnu_pbds::trie_string_access_traits::size_type	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    typedef typename _Alloc::size_type			  size_type;$/;"	t	struct:__gnu_pbds::trie_string_access_traits	access:public
 __gnu_pbds::trie_tag	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  struct trie_tag : public basic_branch_tag { };$/;"	s	namespace:__gnu_pbds	inherits:basic_branch_tag
@@ -8086,7 +8086,7 @@ apply_update	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/rotate_fn_imps.hpp	
 apply_update	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/rotate_fn_imps.hpp	/^apply_update(node_pointer p_nd, Node_Update_* p_update)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(node_pointer p_nd, Node_Update_* p_update)
 apply_update	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/update_fn_imps.hpp	/^apply_update(node_pointer p_nd, Node_Update_*)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(node_pointer p_nd, Node_Update_*)
 apply_update	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/update_fn_imps.hpp	/^apply_update(node_pointer, null_node_update_pointer)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(node_pointer, null_node_update_pointer)
-arr_size	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^	  arr_size = _ATraits::max_size + 1$/;"	e	enum:__gnu_pbds::detail::pat_trie_base::_Inode::__anon5
+arr_size	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^	  arr_size = _ATraits::max_size + 1$/;"	e	enum:__gnu_pbds::detail::pat_trie_base::_Inode::__anon23
 arrayBaseOffset	/usr/include/c++/4.8/sun/misc/Unsafe.h	/^  virtual jint arrayBaseOffset(::java::lang::Class *);$/;"	p	class:sun::misc::Unsafe	access:public	signature:(::java::lang::Class *)
 arrayIndexScale	/usr/include/c++/4.8/sun/misc/Unsafe.h	/^  virtual jint arrayIndexScale(::java::lang::Class *);$/;"	p	class:sun::misc::Unsafe	access:public	signature:(::java::lang::Class *)
 assert_aux_null	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/debug_fn_imps.hpp	/^assert_aux_null(const char* __file, int __line) const$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(const char* __file, int __line) const
@@ -8774,7 +8774,7 @@ default_parallel_tag	/usr/include/c++/4.8/parallel/tags.h	/^    default_parallel
 default_parallel_tag	/usr/include/c++/4.8/parallel/tags.h	/^  struct default_parallel_tag : public parallel_tag$/;"	s	namespace:__gnu_parallel	inherits:parallel_tag
 default_probe_fn	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^    struct default_probe_fn$/;"	s	namespace:__gnu_pbds::detail
 default_resize_policy	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^    struct default_resize_policy$/;"	s	namespace:__gnu_pbds::detail
-default_store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^	default_store_hash = false$/;"	e	enum:__gnu_pbds::detail::__anon1
+default_store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^	default_store_hash = false$/;"	e	enum:__gnu_pbds::detail::__anon28
 default_trie_access_traits	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^      struct default_trie_access_traits<__dtrie_string>$/;"	s	namespace:__gnu_pbds::detail
 default_update_policy	/usr/include/c++/4.8/ext/pb_ds/detail/standard_policies.hpp	/^    struct default_update_policy$/;"	s	namespace:__gnu_pbds::detail
 degree	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/debug_fn_imps.hpp	/^degree(node_const_pointer p_nd)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(node_const_pointer p_nd)
@@ -8843,9 +8843,9 @@ detail	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^  namespace detail
 detail	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^  namespace detail$/;"	n	namespace:__gnu_pbds
 detail	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  namespace detail$/;"	n	namespace:__gnu_pbds
 detail::g_a_sizes	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^  static const std::size_t g_a_sizes[num_distinct_sizes_64_bit] =$/;"	m	namespace:detail
-detail::num_distinct_sizes	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes = sizeof(std::size_t) != 8 ? $/;"	e	enum:detail::__anon6
-detail::num_distinct_sizes_32_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_32_bit = 30,$/;"	e	enum:detail::__anon6
-detail::num_distinct_sizes_64_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_64_bit = 62,$/;"	e	enum:detail::__anon6
+detail::num_distinct_sizes	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes = sizeof(std::size_t) != 8 ? $/;"	e	enum:detail::__anon20
+detail::num_distinct_sizes_32_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_32_bit = 30,$/;"	e	enum:detail::__anon20
+detail::num_distinct_sizes_64_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_64_bit = 62,$/;"	e	enum:detail::__anon20
 difference_type	/usr/include/c++/4.8/debug/safe_iterator.h	/^      typedef typename _Traits::difference_type   difference_type;$/;"	t	class:__gnu_debug::_Safe_iterator	access:public
 difference_type	/usr/include/c++/4.8/debug/safe_local_iterator.h	/^      typedef typename _Traits::difference_type   difference_type;$/;"	t	class:__gnu_debug::_Safe_local_iterator	access:public
 difference_type	/usr/include/c++/4.8/debug/safe_sequence.h	/^      difference_type;$/;"	t	class:__gnu_debug::_After_nth_from	access:private
@@ -9084,19 +9084,19 @@ erase_at	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^ 
 erase_at	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      erase_at(entry_pointer, size_type, true_type);$/;"	p	class:__gnu_pbds::detail::binary_heap	access:public	signature:(entry_pointer, size_type, true_type)
 erase_at	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/erase_fn_imps.hpp	/^erase_at(entry_pointer a_entries, size_type i, false_type)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(entry_pointer a_entries, size_type i, false_type)
 erase_at	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/erase_fn_imps.hpp	/^erase_at(entry_pointer, size_type, true_type)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(entry_pointer, size_type, true_type)
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = base_type::erase_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon41
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
-erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = base_type::erase_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon16
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
+erase_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	erase_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
 erase_entry	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/erase_fn_imps.hpp	/^erase_entry(entry_pointer p_e)$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(entry_pointer p_e)
 erase_entry	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      erase_entry(entry_pointer);$/;"	p	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:private	signature:(entry_pointer)
 erase_entry_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^      erase_entry_pointer(entry_pointer&);$/;"	p	class:__gnu_pbds::detail::PB_DS_CC_HASH_NAME	access:private	signature:(entry_pointer&)
@@ -9152,9 +9152,9 @@ exact_tag	/usr/include/c++/4.8/parallel/tags.h	/^    exact_tag() { }$/;"	f	struc
 exact_tag	/usr/include/c++/4.8/parallel/tags.h	/^    exact_tag(_ThreadIndex __num_threads)$/;"	f	struct:__gnu_parallel::exact_tag	access:public	signature:(_ThreadIndex __num_threads)
 exact_tag	/usr/include/c++/4.8/parallel/tags.h	/^  struct exact_tag : public parallel_tag$/;"	s	namespace:__gnu_parallel	inherits:parallel_tag
 exception_ptr	/usr/include/c++/4.8/bits/exception_ptr.h	/^    class exception_ptr$/;"	c	namespace:std::__exception_ptr
-external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::cc_hash_max_collision_check_resize_trigger::__anon27
-external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::hash_load_check_resize_trigger::__anon26
-external_size_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_size_access = External_Size_Access$/;"	e	enum:__gnu_pbds::hash_standard_resize_policy::__anon28
+external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::cc_hash_max_collision_check_resize_trigger::__anon2
+external_load_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_load_access = External_Load_Access$/;"	e	enum:__gnu_pbds::hash_load_check_resize_trigger::__anon1
+external_size_access	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^	external_size_access = External_Size_Access$/;"	e	enum:__gnu_pbds::hash_standard_resize_policy::__anon3
 extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/branch_policy/branch_policy.hpp	/^	extract_key(const_reference r_val)$/;"	f	struct:__gnu_pbds::detail::branch_policy	access:protected	signature:(const_reference r_val)
 extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/synth_access_traits.hpp	/^      extract_key(const_reference);$/;"	p	struct:__gnu_pbds::detail::synth_access_traits	access:public	signature:(const_reference)
 extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/synth_access_traits.hpp	/^      extract_key(const_reference, false_type);$/;"	p	struct:__gnu_pbds::detail::synth_access_traits	access:private	signature:(const_reference, false_type)
@@ -9162,7 +9162,7 @@ extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/synth_access_traits.
 extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/synth_access_traits.hpp	/^    extract_key(const_reference r_val)$/;"	f	class:__gnu_pbds::detail::PB_DS_SYNTH_E_ACCESS_TRAITS_C_DEC	signature:(const_reference r_val)
 extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/synth_access_traits.hpp	/^    extract_key(const_reference r_val, false_type)$/;"	f	class:__gnu_pbds::detail::PB_DS_SYNTH_E_ACCESS_TRAITS_C_DEC	signature:(const_reference r_val, false_type)
 extract_key	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/synth_access_traits.hpp	/^    extract_key(const_reference r_val, true_type)$/;"	f	class:__gnu_pbds::detail::PB_DS_SYNTH_E_ACCESS_TRAITS_C_DEC	signature:(const_reference r_val, true_type)
-factor	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  factor = 2$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon10
+factor	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  factor = 2$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon21
 false_type	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^    typedef std::tr1::integral_constant<int, 0> false_type;$/;"	t	namespace:__gnu_pbds::detail
 feclearexcept	/usr/include/c++/4.8/fenv.h	43;"	d
 fegetenv	/usr/include/c++/4.8/fenv.h	50;"	d
@@ -10063,11 +10063,11 @@ mapped_type	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^	typedef ty
 mask_based_base	/usr/include/c++/4.8/ext/pb_ds/hash_policy.hpp	/^    typedef detail::mask_based_range_hashing<Size_Type> mask_based_base;$/;"	t	class:__gnu_pbds::direct_mask_range_hashing	access:private
 mask_based_range_hashing	/usr/include/c++/4.8/ext/pb_ds/detail/hash_fn/mask_based_range_hashing.hpp	/^    class mask_based_range_hashing$/;"	c	namespace:__gnu_pbds::detail
 max	/usr/include/c++/4.8/parallel/base.h	/^    max(const _Tp& __a, const _Tp& __b)$/;"	f	namespace:__gnu_parallel	signature:(const _Tp& __a, const _Tp& __b)
-max_count	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^	  max_count = Max_Count$/;"	e	enum:__gnu_pbds::lu_counter_policy::__anon42
-max_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_e_val = Max_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon25
+max_count	/usr/include/c++/4.8/ext/pb_ds/list_update_policy.hpp	/^	  max_count = Max_Count$/;"	e	enum:__gnu_pbds::lu_counter_policy::__anon40
+max_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_e_val = Max_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon42
 max_element_minimal_n	/usr/include/c++/4.8/parallel/settings.h	/^    _SequenceIndex              max_element_minimal_n;$/;"	m	struct:__gnu_parallel::_Settings	access:public
-max_entries	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^	  max_entries = sizeof(size_type) << 3$/;"	e	enum:__gnu_pbds::detail::rc::__anon4
-max_rank	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	  max_rank = (sizeof(size_type) << 4) + 2$/;"	e	enum:__gnu_pbds::detail::thin_heap::__anon7
+max_entries	/usr/include/c++/4.8/ext/pb_ds/detail/rc_binomial_heap_/rc.hpp	/^	  max_entries = sizeof(size_type) << 3$/;"	e	enum:__gnu_pbds::detail::rc::__anon24
+max_rank	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	  max_rank = (sizeof(size_type) << 4) + 2$/;"	e	enum:__gnu_pbds::detail::thin_heap::__anon29
 max_size	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp	/^      max_size() const;$/;"	p	class:__gnu_pbds::detail::PB_DS_BIN_TREE_NAME	access:public	signature:() const
 max_size	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/info_fn_imps.hpp	/^max_size() const$/;"	f	class:PB_DS_CLASS_C_DEC	signature:() const
 max_size	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      max_size() const;$/;"	p	class:__gnu_pbds::detail::binary_heap	access:public	signature:() const
@@ -10085,8 +10085,8 @@ max_size	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/info_fn_imps.hpp	/^m
 max_size	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/ov_tree_map_.hpp	/^      max_size() const;$/;"	p	class:__gnu_pbds::detail::PB_DS_OV_TREE_NAME	access:public	signature:() const
 max_size	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/info_fn_imps.hpp	/^max_size() const$/;"	f	class:PB_DS_CLASS_C_DEC	signature:() const
 max_size	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_.hpp	/^      max_size() const;$/;"	p	class:__gnu_pbds::detail::PB_DS_PAT_TRIE_NAME	access:public	signature:() const
-max_size	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^	max_size = 4$/;"	e	enum:__gnu_pbds::sample_trie_access_traits::__anon12
-max_size	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_size = max_e_val - min_e_val + 1$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon25
+max_size	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/sample_trie_access_traits.hpp	/^	max_size = 4$/;"	e	enum:__gnu_pbds::sample_trie_access_traits::__anon39
+max_size	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	max_size = max_e_val - min_e_val + 1$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon42
 memberValues	/usr/include/c++/4.8/sun/reflect/annotation/AnnotationInvocationHandler.h	/^  ::java::util::Map * memberValues;$/;"	m	class:sun::reflect::annotation::AnnotationInvocationHandler	access:private
 merge_minimal_n	/usr/include/c++/4.8/parallel/settings.h	/^    _SequenceIndex              merge_minimal_n;$/;"	m	struct:__gnu_parallel::_Settings	access:public
 merge_oversampling	/usr/include/c++/4.8/parallel/settings.h	/^    unsigned int                merge_oversampling;$/;"	m	struct:__gnu_parallel::_Settings	access:public
@@ -10136,7 +10136,7 @@ metadata_type	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    typedef size_
 mid_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/node_iterators.hpp	/^      mid_pointer(Ptr p_begin, Ptr p_end)$/;"	f	class:__gnu_pbds::detail::ov_tree_node_const_it_	access:protected	signature:(Ptr p_begin, Ptr p_end)
 mid_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/ov_tree_map_.hpp	/^      mid_pointer(Ptr p_begin, Ptr p_end)$/;"	f	class:__gnu_pbds::detail::PB_DS_OV_TREE_NAME	access:private	signature:(Ptr p_begin, Ptr p_end)
 min	/usr/include/c++/4.8/parallel/base.h	/^    min(const _Tp& __a, const _Tp& __b)$/;"	f	namespace:__gnu_parallel	signature:(const _Tp& __a, const _Tp& __b)
-min_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	min_e_val = Min_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon25
+min_e_val	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	min_e_val = Min_E_Val,$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon42
 min_element_minimal_n	/usr/include/c++/4.8/parallel/settings.h	/^    _SequenceIndex              min_element_minimal_n;$/;"	m	struct:__gnu_parallel::_Settings	access:public
 min_size	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      const _Tp resize_policy<_Tp>::min_size;$/;"	m	class:__gnu_pbds::detail::resize_policy
 min_size	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      static const _Tp	min_size = 16;$/;"	m	class:__gnu_pbds::detail::resize_policy	access:public
@@ -10471,13 +10471,13 @@ null_node_update_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_tri
 null_node_update_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/traits.hpp	/^      typedef null_node_update<node_const_iterator, node_const_iterator, _ATraits, _Alloc>* 	null_node_update_pointer;$/;"	t	struct:__gnu_pbds::detail::trie_traits	access:public
 null_node_update_pointer	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/traits.hpp	/^      typedef null_node_update<node_const_iterator, node_iterator, _ATraits, _Alloc>* 		null_node_update_pointer;$/;"	t	struct:__gnu_pbds::detail::trie_traits	access:public
 null_type	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  struct null_type { };$/;"	s	namespace:__gnu_pbds
-null_update	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::tree_node_metadata_dispatch::__anon23
-null_update	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::trie_node_metadata_dispatch::__anon13
+null_update	/usr/include/c++/4.8/ext/pb_ds/detail/tree_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::tree_node_metadata_dispatch::__anon17
+null_update	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/node_metadata_selector.hpp	/^	  null_update = is_same<__node_u, __nnode_u>::value$/;"	e	enum:__gnu_pbds::detail::trie_node_metadata_dispatch::__anon38
 num_children	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      num_children() const$/;"	f	class:__gnu_pbds::detail::pat_trie_base::_Node_citer	access:public	signature:() const
-num_distinct_rank_bounds	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	num_distinct_rank_bounds = 48$/;"	e	enum:__gnu_pbds::detail::__anon8
-num_distinct_sizes	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes = sizeof(std::size_t) != 8 ? $/;"	e	enum:detail::__anon6
-num_distinct_sizes_32_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_32_bit = 30,$/;"	e	enum:detail::__anon6
-num_distinct_sizes_64_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_64_bit = 62,$/;"	e	enum:detail::__anon6
+num_distinct_rank_bounds	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^	num_distinct_rank_bounds = 48$/;"	e	enum:__gnu_pbds::detail::__anon30
+num_distinct_sizes	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes = sizeof(std::size_t) != 8 ? $/;"	e	enum:detail::__anon20
+num_distinct_sizes_32_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_32_bit = 30,$/;"	e	enum:detail::__anon20
+num_distinct_sizes_64_bit	/usr/include/c++/4.8/ext/pb_ds/detail/resize_policy/hash_prime_size_policy_imp.hpp	/^      num_distinct_sizes_64_bit = 62,$/;"	e	enum:detail::__anon20
 objectFieldOffset	/usr/include/c++/4.8/sun/misc/Unsafe.h	/^  virtual jlong objectFieldOffset(::java::lang::reflect::Field *);$/;"	p	class:sun::misc::Unsafe	access:public	signature:(::java::lang::reflect::Field *)
 omp_loop_static_tag	/usr/include/c++/4.8/parallel/tags.h	/^  struct omp_loop_static_tag : public parallel_tag { };$/;"	s	namespace:__gnu_parallel	inherits:parallel_tag
 omp_loop_tag	/usr/include/c++/4.8/parallel/tags.h	/^  struct omp_loop_tag : public parallel_tag { };$/;"	s	namespace:__gnu_parallel	inherits:parallel_tag
@@ -10784,19 +10784,19 @@ order_of_key	/usr/include/c++/4.8/ext/pb_ds/tree_policy.hpp	/^    order_of_key(k
 order_of_key	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    order_of_key(key_const_reference) const;$/;"	p	class:__gnu_pbds::trie_order_statistics_node_update	access:public	signature:(key_const_reference) const
 order_of_prefix	/usr/include/c++/4.8/ext/pb_ds/detail/trie_policy/order_statistics_imp.hpp	/^order_of_prefix(typename access_traits::const_iterator b,$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(typename access_traits::const_iterator b, typename access_traits::const_iterator e) const
 order_of_prefix	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^    order_of_prefix(a_const_iterator, a_const_iterator) const;$/;"	p	class:__gnu_pbds::trie_order_statistics_node_update	access:public	signature:(a_const_iterator, a_const_iterator) const
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = base_type::order_preserving,$/;"	e	enum:__gnu_pbds::container_traits::__anon41
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
-order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = base_type::order_preserving,$/;"	e	enum:__gnu_pbds::container_traits::__anon16
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
+order_preserving	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	order_preserving = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
 ov_tree_node_const_it_	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/node_iterators.hpp	/^      ov_tree_node_const_it_(const_pointer p_nd = 0,  const_pointer p_begin_nd = 0,  const_pointer p_end_nd = 0,  const_metadata_pointer p_metadata = 0) : m_p_value(const_cast<pointer>(p_nd)), m_p_begin_value(const_cast<pointer>(p_begin_nd)), m_p_end_value(const_cast<pointer>(p_end_nd)), m_p_metadata(p_metadata)$/;"	f	class:__gnu_pbds::detail::ov_tree_node_const_it_	access:public	signature:(const_pointer p_nd = 0, const_pointer p_begin_nd = 0, const_pointer p_end_nd = 0, const_metadata_pointer p_metadata = 0)
 ov_tree_node_const_it_	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/node_iterators.hpp	/^    class ov_tree_node_const_it_$/;"	c	namespace:__gnu_pbds::detail
 ov_tree_node_it_	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/node_iterators.hpp	/^      ov_tree_node_it_(const_pointer p_nd = 0,  const_pointer p_begin_nd = 0,  const_pointer p_end_nd = 0,  const_metadata_pointer p_metadata = 0) : base_type(p_nd,  p_begin_nd,  p_end_nd,  p_metadata)$/;"	f	class:__gnu_pbds::detail::ov_tree_node_it_	access:public	signature:(const_pointer p_nd = 0, const_pointer p_begin_nd = 0, const_pointer p_end_nd = 0, const_metadata_pointer p_metadata = 0)
@@ -11080,7 +11080,7 @@ ranged_probe_fn	/usr/include/c++/4.8/ext/pb_ds/detail/hash_fn/ranged_probe_fn.hp
 ranged_probe_fn_base	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^      typedef PB_DS_RANGED_PROBE_FN_C_DEC 	ranged_probe_fn_base;$/;"	t	class:__gnu_pbds::detail::PB_DS_GP_HASH_NAME	access:private
 rank_bound	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/erase_fn_imps.hpp	/^rank_bound()$/;"	f	class:PB_DS_CLASS_C_DEC	signature:()
 rank_bound	/usr/include/c++/4.8/ext/pb_ds/detail/thin_heap_/thin_heap_.hpp	/^      rank_bound();$/;"	p	class:__gnu_pbds::detail::thin_heap	access:private	signature:()
-ratio	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  ratio = 8,$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon10
+ratio	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^	  ratio = 8,$/;"	e	enum:__gnu_pbds::detail::resize_policy::__anon21
 rb_tree_node_	/usr/include/c++/4.8/ext/pb_ds/detail/rb_tree_map_/node.hpp	/^    struct rb_tree_node_$/;"	s	namespace:__gnu_pbds::detail
 rb_tree_node_	/usr/include/c++/4.8/ext/pb_ds/detail/rb_tree_map_/node.hpp	/^    struct rb_tree_node_<Value_Type, null_type, _Alloc>$/;"	s	namespace:__gnu_pbds::detail
 rb_tree_tag	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^  struct rb_tree_tag : public tree_tag { };$/;"	s	namespace:__gnu_pbds	inherits:tree_tag
@@ -11273,20 +11273,20 @@ rethrow_exception	/usr/include/c++/4.8/bits/exception_ptr.h	/^  void rethrow_exc
 rethrow_if_nested	/usr/include/c++/4.8/bits/nested_exception.h	/^    rethrow_if_nested(const _Ex& __ex)$/;"	f	namespace:std	signature:(const _Ex& __ex)
 rethrow_if_nested	/usr/include/c++/4.8/bits/nested_exception.h	/^  rethrow_if_nested(const nested_exception& __ex)$/;"	f	namespace:std	signature:(const nested_exception& __ex)
 rethrow_nested	/usr/include/c++/4.8/bits/nested_exception.h	/^    rethrow_nested() const __attribute__ ((__noreturn__))$/;"	f	class:std::nested_exception	access:public	signature:() const
-reverse	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	reverse = Reverse$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon24
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = base_type::reverse_iteration$/;"	e	enum:__gnu_pbds::container_traits::__anon41
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
+reverse	/usr/include/c++/4.8/ext/pb_ds/trie_policy.hpp	/^	reverse = Reverse$/;"	e	enum:__gnu_pbds::trie_string_access_traits::__anon41
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = base_type::reverse_iteration$/;"	e	enum:__gnu_pbds::container_traits::__anon16
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = false$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+reverse_iteration	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	reverse_iteration = true$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
 reverse_iterator	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp	/^      typedef typename traits_type::reverse_iterator 	reverse_iterator;$/;"	t	class:__gnu_pbds::detail::PB_DS_BIN_TREE_NAME	access:public
 reverse_iterator	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/traits.hpp	/^      reverse_iterator;$/;"	t	struct:__gnu_pbds::detail::bin_search_tree_traits	access:public
 reverse_iterator	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/traits.hpp	/^      typedef const_reverse_iterator reverse_iterator;$/;"	t	struct:__gnu_pbds::detail::bin_search_tree_traits	access:public
@@ -11444,8 +11444,8 @@ set_union_minimal_n	/usr/include/c++/4.8/parallel/settings.h	/^    _SequenceInde
 should_be_mine	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      should_be_mine(a_const_iterator, a_const_iterator, size_type,$/;"	p	struct:__gnu_pbds::detail::pat_trie_base::_Inode	access:public	signature:(a_const_iterator, a_const_iterator, size_type, a_const_pointer) const
 should_be_mine	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^    should_be_mine(a_const_iterator b_it, a_const_iterator e_it,$/;"	f	class:__gnu_pbds::detail::PB_DS_CLASS_C_DEC	signature:(a_const_iterator b_it, a_const_iterator e_it, size_type checked_ind, a_const_pointer p_traits) const
 shrink_needed	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/resize_policy.hpp	/^      shrink_needed(size_type) const;$/;"	p	class:__gnu_pbds::detail::resize_policy	access:public	signature:(size_type) const
-simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^	  simple_value = is_simple<value_type>::value$/;"	e	enum:__gnu_pbds::detail::binary_heap::__anon11
-simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^	  simple_value = is_simple<Value_Type>::value$/;"	e	enum:__gnu_pbds::detail::left_child_next_sibling_heap::__anon9
+simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^	  simple_value = is_simple<value_type>::value$/;"	e	enum:__gnu_pbds::detail::binary_heap::__anon22
+simple_value	/usr/include/c++/4.8/ext/pb_ds/detail/left_child_next_sibling_heap_/left_child_next_sibling_heap_.hpp	/^	  simple_value = is_simple<Value_Type>::value$/;"	e	enum:__gnu_pbds::detail::left_child_next_sibling_heap::__anon27
 size	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp	/^      size() const;$/;"	p	class:__gnu_pbds::detail::PB_DS_BIN_TREE_NAME	access:public	signature:() const
 size	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/info_fn_imps.hpp	/^size() const$/;"	f	class:PB_DS_CLASS_C_DEC	signature:() const
 size	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      size() const;$/;"	p	class:__gnu_pbds::detail::binary_heap	access:public	signature:() const
@@ -11585,19 +11585,19 @@ split_finish	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/split_join_f
 split_imp	/usr/include/c++/4.8/ext/pb_ds/detail/rb_tree_map_/rb_tree_.hpp	/^      split_imp(node_pointer, PB_DS_CLASS_C_DEC&);$/;"	p	class:__gnu_pbds::detail::PB_DS_RB_TREE_NAME	access:private	signature:(node_pointer, PB_DS_CLASS_C_DEC&)
 split_insert_branch	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_.hpp	/^      split_insert_branch(size_type, a_const_iterator, inode_iterator,$/;"	p	class:__gnu_pbds::detail::PB_DS_PAT_TRIE_NAME	access:private	signature:(size_type, a_const_iterator, inode_iterator, size_type, branch_bag&)
 split_insert_branch	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/split_fn_imps.hpp	/^split_insert_branch(size_type e_ind, a_const_iterator b_it,$/;"	f	class:PB_DS_CLASS_C_DEC	signature:(size_type e_ind, a_const_iterator b_it, inode_iterator child_b_it, size_type num_children, branch_bag& r_bag)
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = base_type::split_join_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon41
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon29
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon30
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon31
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon32
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon35
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon36
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon37
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon38
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon39
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon33
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon34
-split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon40
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = base_type::split_join_can_throw,$/;"	e	enum:__gnu_pbds::container_traits::__anon16
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon10
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon11
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon12
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon13
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon14
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon4
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon5
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon6
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = false,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon7
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon15
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon8
+split_join_can_throw	/usr/include/c++/4.8/ext/pb_ds/tag_and_trait.hpp	/^	split_join_can_throw = true,$/;"	e	enum:__gnu_pbds::container_traits_base::__anon9
 split_min	/usr/include/c++/4.8/ext/pb_ds/detail/rb_tree_map_/rb_tree_.hpp	/^      split_min();$/;"	p	class:__gnu_pbds::detail::PB_DS_RB_TREE_NAME	access:private	signature:()
 split_min	/usr/include/c++/4.8/ext/pb_ds/detail/rb_tree_map_/split_join_fn_imps.hpp	/^split_min()$/;"	f	class:PB_DS_CLASS_C_DEC	signature:()
 split_min_imp	/usr/include/c++/4.8/ext/pb_ds/detail/rb_tree_map_/rb_tree_.hpp	/^      split_min_imp();$/;"	p	class:__gnu_pbds::detail::PB_DS_RB_TREE_NAME	access:private	signature:()
@@ -11674,10 +11674,10 @@ std::rethrow_if_nested	/usr/include/c++/4.8/bits/nested_exception.h	/^  rethrow_
 std::throw_with_nested	/usr/include/c++/4.8/bits/nested_exception.h	/^    throw_with_nested(_Ex __ex) __attribute__ ((__noreturn__));$/;"	p	namespace:std	signature:(_Ex __ex)
 std::throw_with_nested	/usr/include/c++/4.8/bits/nested_exception.h	/^    throw_with_nested(_Ex __ex)$/;"	f	namespace:std	signature:(_Ex __ex)
 store_extra	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^	typedef integral_constant<int, Store_Hash> 	store_extra;$/;"	t	struct:__gnu_pbds::detail::types_traits	access:public
-store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon14
-store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon2
-store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon15
-store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon3
+store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon18
+store_hash	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash = Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon25
+store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/cc_hash_table_map_/cc_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_CC_HASH_NAME::__anon19
+store_hash_ok	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  store_hash_ok = !Store_Hash$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::__anon26
 stored_data	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^      struct stored_data$/;"	s	namespace:__gnu_pbds::detail	inherits:stored_value,stored_hash
 stored_data	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^      struct stored_data<_Tv, null_type>$/;"	s	namespace:__gnu_pbds::detail	inherits:stored_value
 stored_data_type	/usr/include/c++/4.8/ext/pb_ds/detail/types_traits.hpp	/^	typedef stored_data<value_type, null_type>	stored_data_type;$/;"	t	struct:__gnu_pbds::detail::type_base	access:public
@@ -12122,17 +12122,17 @@ upper_bound	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/find_fn_imps.hpp	/^u
 upper_bound	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_.hpp	/^      upper_bound(key_const_reference) const;$/;"	p	class:__gnu_pbds::detail::PB_DS_PAT_TRIE_NAME	access:public	signature:(key_const_reference) const
 upper_bound	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_.hpp	/^      upper_bound(key_const_reference);$/;"	p	class:__gnu_pbds::detail::PB_DS_PAT_TRIE_NAME	access:public	signature:(key_const_reference)
 upper_bound_imp	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_.hpp	/^      upper_bound_imp(key_const_reference);$/;"	p	class:__gnu_pbds::detail::PB_DS_PAT_TRIE_NAME	access:private	signature:(key_const_reference)
-v	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  v = 1$/;"	e	enum:__gnu_pbds::detail::__static_assert_dumclass::__anon22
+v	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  v = 1$/;"	e	enum:__gnu_pbds::detail::__static_assert_dumclass::__anon37
 valid_entry_status	/usr/include/c++/4.8/ext/pb_ds/detail/gp_hash_table_map_/gp_ht_map_.hpp	/^	  valid_entry_status,$/;"	e	enum:__gnu_pbds::detail::PB_DS_GP_HASH_NAME::entry_status
 valid_prefix	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      valid_prefix() const$/;"	f	class:__gnu_pbds::detail::pat_trie_base::_Node_citer	access:public	signature:() const
 value	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      value() const$/;"	f	struct:__gnu_pbds::detail::pat_trie_base::_Leaf	access:public	signature:() const
 value	/usr/include/c++/4.8/ext/pb_ds/detail/pat_trie_/pat_trie_base.hpp	/^      value()$/;"	f	struct:__gnu_pbds::detail::pat_trie_base::_Leaf	access:public	signature:()
-value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 0$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon19
-value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 1$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon20
-value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_pointer<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_pointer::__anon16
-value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_reference<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_reference::__anon17
-value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_fundamental<typename remove_const<T>::type>::value $/;"	e	enum:__gnu_pbds::detail::is_simple::__anon18
-value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_pair_imp<T>::value$/;"	e	enum:__gnu_pbds::detail::is_pair::__anon21
+value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 0$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon34
+value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	    value = 1$/;"	e	enum:__gnu_pbds::detail::is_pair::is_pair_imp::__anon35
+value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_pointer<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_pointer::__anon31
+value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_const<T>::value && is_reference<T>::value$/;"	e	enum:__gnu_pbds::detail::is_const_reference::__anon32
+value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_fundamental<typename remove_const<T>::type>::value $/;"	e	enum:__gnu_pbds::detail::is_simple::__anon33
+value	/usr/include/c++/4.8/ext/pb_ds/detail/type_utils.hpp	/^	  value = is_pair_imp<T>::value$/;"	e	enum:__gnu_pbds::detail::is_pair::__anon36
 value_allocator	/usr/include/c++/4.8/ext/pb_ds/detail/binary_heap_/binary_heap_.hpp	/^      typedef typename __rebind_v::other 		value_allocator;$/;"	t	class:__gnu_pbds::detail::binary_heap	access:private
 value_allocator	/usr/include/c++/4.8/ext/pb_ds/detail/ov_tree_map_/ov_tree_map_.hpp	/^      typedef typename _Alloc::template rebind<non_const_value_type>::other value_allocator;$/;"	t	class:__gnu_pbds::detail::PB_DS_OV_TREE_NAME	access:private
 value_swap	/usr/include/c++/4.8/ext/pb_ds/detail/bin_search_tree_/bin_search_tree_.hpp	/^      value_swap(PB_DS_CLASS_C_DEC&);$/;"	p	class:__gnu_pbds::detail::PB_DS_BIN_TREE_NAME	access:protected	signature:(PB_DS_CLASS_C_DEC&)
