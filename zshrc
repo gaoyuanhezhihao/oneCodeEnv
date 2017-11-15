@@ -9,7 +9,7 @@ if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
 fi
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
-source ~/oneCodeEnv/scripts/sourceAll.sh
+source ~/oneCodeEnv/shell/func/sourceAll.sh
 alias cd=pushd
 alias pp=popd
 source /opt/ros/indigo/setup.zsh
