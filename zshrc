@@ -13,3 +13,6 @@ source ~/oneCodeEnv/shell/func/sourceAll.sh
 alias cd=pushd
 alias pp=popd
 source /opt/ros/indigo/setup.zsh
+source ~/oneCodeEnv/shell/env.sh
+source ~/oneCodeEnv/shell/func/sourceAll.sh
+source ~/oneCodeEnv/shell/alias.sh
