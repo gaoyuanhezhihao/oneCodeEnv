@@ -27,5 +27,5 @@ function jupy(){
     esac
     #source ~/oneCodeEnv/network/jupy_tesla.sh
     echo $IP":"$Remote_Port "--> 127.0.0.1:"$This_Port
-    echo ssh -N -f -L 127.0.0.1:$This_Port:127.0.0.1:$Remote_Port hzh@$IP
+    ssh -N -f -L 127.0.0.1:$This_Port:127.0.0.1:$Remote_Port hzh@$IP
 }
