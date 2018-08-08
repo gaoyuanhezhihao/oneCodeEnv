@@ -43,11 +43,16 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'tpope/vim-repeat'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'skywind3000/gutentags_plus'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'alpertuna/vim-header'
 "Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 filetype on
 source ~/.vim/basic.vim
 source ~/.vim/color.vim
+source ~/.vim/plugin_config/vim-header.vim
 "define <Leader>
 "SimpylFold
 let g:SimpylFold_docstring_preview=1
@@ -396,3 +401,16 @@ let g:airline#extensions#csv#enabled = 0
 "let g:airline_setion_y='%t'
 "let g:airline_setion_z='%t'
 "  === airline ===
+"  --- gtags ---
+" enable gtags module
+let g:gutentags_modules = ['gtags_cscope']
+
+" config project root markers.
+let g:gutentags_project_root = ['.root']
+
+" generate datebases in my cache directory, prevent gtags files polluting my project
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+
+" forbid gutentags adding gtags databases
+let g:gutentags_auto_add_gtags_cscope = 0
+"  === gtags ===
