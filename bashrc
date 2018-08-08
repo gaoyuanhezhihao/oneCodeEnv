@@ -177,9 +177,14 @@ alias tmux="tmux -2"
 # added by Anaconda3 4.4.0 installer
 export PATH="/home/hzh/anaconda3/bin:$PATH"
 export PATH="$HOME/bin/bin:$PATH"
+export PATH="$HOME/bin/lib:$PATH"
+export LD_LIBRARY_PATH="$HOME/bin/lib:$LD_LIBRARY_PATH"
 source ~/oneCodeEnv/shell/env.sh
 source ~/oneCodeEnv/shell/func/sourceAll.sh
 source ~/oneCodeEnv/shell/alias.sh
 
 
 export PS1="\u\[$(tput sgr0)\]\[\033[38;5;156m\]@\[$(tput sgr0)\]\[\033[38;5;15m\]\h \[$(tput sgr0)\]\[\033[38;5;214m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \n$ \[$(tput sgr0)\]"
+
+# ROS
+source /opt/ros/kinetic/setup.bash
