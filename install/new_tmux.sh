@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e # quit if any command fail
+
 echo "installing tmux"
 mkdir -p $HOME/bin
 INSTALL_DIR=$HOME/bin
@@ -6,14 +8,15 @@ INSTALL_DIR=$HOME/bin
 echo "install directory:"
 echo $INSTALL_DIR
 
-sudo apt-get install libtool automake autotools-dev -y
+#sudo apt-get install libtool automake autotools-dev -y
 cd /tmp
-wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz -P /tmp
-git clone https://github.com/libevent/libevent
-wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz -P /tmp
+wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3tmux-2.3.tar.gz -O /tmp/tmux-2.3.tar.gz
+wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3libevent-2.0.20-stable.tar.gz -O /tmp/libevent.tar.gz
+wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3ncurses-6.0.tar.gz -O /tmp/ncurses-6.0.tar.gz
 # libevent 
-cd libevent
-./autogen 
+tar -xvf libevent.tar.gz
+cd libevent-2.0.20-stable
+./configure --prefix=/$HOME/bin/
 make
 make install
 cd ../ 
@@ -24,11 +27,10 @@ cd ncurses-6.0
 make
 make install
 cd ../
-# tmux
+#tmux
 tar -xvzf tmux-2.3.tar.gz
 cd tmux-2.3
 
 ./configure --prefix=$INSTALL_DIR CFLAGS="-I$INSTALL_DIR/include -I$INSTALL_DIR/include/ncurses" LDFLAGS="-L$INSTALL_DIR/lib -L$INSTALL_DIR/include/ncurses -L$INSTALL_DIR/include"
-
 make
 make install
