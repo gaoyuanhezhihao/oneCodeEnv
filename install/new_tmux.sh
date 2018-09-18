@@ -23,6 +23,7 @@ cd ../
 # ncurses
 tar -xvzf ncurses-6.0.tar.gz
 cd ncurses-6.0
+export CPPFLAGS="-P"
 ./configure --prefix=$INSTALL_DIR
 make
 make install
