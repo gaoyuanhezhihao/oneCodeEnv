@@ -397,6 +397,9 @@ let g:airline_theme='sol'
 let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_setion_gutter=''
 let g:airline#extensions#csv#enabled = 0
+"disable git status
+let g:airline_section_b = 0
+let g:airline_section_y = 0
 
 "let g:airline_setion_y='%t'
 "let g:airline_setion_z='%t'
