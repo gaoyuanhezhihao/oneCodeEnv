@@ -1,3 +1,6 @@
+if has('syntax')
+  syntax enable
+endif
 let mapleader=";"
 " goto line head/end.
 nmap lb 0
@@ -65,3 +68,7 @@ function! Mouse_toggle()
         set mouse=a
     endif
 endfunction
+"  --- tab navigation ---
+map <C-m> gt
+map <C-n> gT
+"  === tab navigation ===
