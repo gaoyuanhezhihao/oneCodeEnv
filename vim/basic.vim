@@ -69,6 +69,6 @@ function! Mouse_toggle()
     endif
 endfunction
 "  --- tab navigation ---
-map <C-m> gt
-map <C-n> gT
+map <C-h> gt
+map <C-g> gT
 "  === tab navigation ===
