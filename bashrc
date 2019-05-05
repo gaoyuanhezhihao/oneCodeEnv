@@ -1,3 +1,9 @@
+#!/bin/bash
+# File              : bashrc
+# Author            : He Zhihao <gaoyuanhezhihao@139.com>
+# Date              : 10.08.2018
+# Last Modified Date: 14.08.2018
+# Last Modified By  : He Zhihao <gaoyuanhezhihao@139.com>
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -57,16 +63,16 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\h|\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\h|\u:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\h|\u: \w\a\]$PS1"
     ;;
 *)
     ;;
@@ -184,7 +190,21 @@ source ~/oneCodeEnv/shell/func/sourceAll.sh
 source ~/oneCodeEnv/shell/alias.sh
 
 
-export PS1="\u\[$(tput sgr0)\]\[\033[38;5;156m\]@\[$(tput sgr0)\]\[\033[38;5;15m\]\h \[$(tput sgr0)\]\[\033[38;5;214m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \n$ \[$(tput sgr0)\]"
+export PS1="\h\[$(tput sgr0)\]\[\033[38;5;156m\]|\[$(tput sgr0)\]\[\033[38;5;15m\]\u \[$(tput sgr0)\]\[\033[38;5;214m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \n$ \[$(tput sgr0)\]"
 
 # ROS
 source /opt/ros/kinetic/setup.bash
+source /etc/profile.d/undistract-me.sh
+source ~/oneCodeEnv/specific/bashrc
+## pyenv configs
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+eval "$(pyenv virtualenv-init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
