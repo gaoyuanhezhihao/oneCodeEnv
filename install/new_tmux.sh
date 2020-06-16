@@ -10,9 +10,12 @@ echo $INSTALL_DIR
 
 #sudo apt-get install libtool automake autotools-dev -y
 cd /tmp
-wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3tmux-2.3.tar.gz -O /tmp/tmux-2.3.tar.gz
-wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3libevent-2.0.20-stable.tar.gz -O /tmp/libevent.tar.gz
-wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3ncurses-6.0.tar.gz -O /tmp/ncurses-6.0.tar.gz
+#wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3tmux-2.3.tar.gz -O /tmp/tmux-2.3.tar.gz
+#wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3libevent-2.0.20-stable.tar.gz -O /tmp/libevent.tar.gz
+#wget http://7xt5m9.com2.z0.glb.clouddn.com/tmux2.3ncurses-6.0.tar.gz -O /tmp/ncurses-6.0.tar.gz
+wget https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz -O /tmp/tmux-2.3.tar.gz
+wget https://github.com/downloads/libevent/libevent/libevent-2.0.20-stable.tar.gz -O /tmp/libevent.tar.gz
+wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz -O /tmp/ncurses-6.0.tar.gz
 # libevent 
 tar -xvf libevent.tar.gz
 cd libevent-2.0.20-stable
