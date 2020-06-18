@@ -46,13 +46,13 @@ Plugin 'tpope/vim-repeat'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'skywind3000/gutentags_plus'
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'alpertuna/vim-header'
+"Plugin 'alpertuna/vim-header'
 "Plugin 'sheerun/vim-polyglot'
 call vundle#end()
 filetype on
 source ~/.vim/basic.vim
 source ~/.vim/color.vim
-source ~/.vim/plugin_config/vim-header.vim
+"source ~/.vim/plugin_config/vim-header.vim
 "define <Leader>
 "SimpylFold
 let g:SimpylFold_docstring_preview=1
@@ -377,15 +377,15 @@ let g:sneak#s_next = 1
 
 "  === easyclip===
 "  --- bookmarks ---
-nmap <Leader>mm  <Plug>BookmarkToggle
-nmap <Leader>mi <Plug>BookmarkAnnotate
-nmap <Leader>ma <Plug>BookmarkShowAll
-nmap <Leader>mmj <Plug>BookmarkNext
-nmap <Leader>mmk <Plug>BookmarkPrev
+nmap <Leader>fm  <Plug>BookmarkToggle
+nmap <Leader>fi <Plug>BookmarkAnnotate
+nmap <Leader>fa <Plug>BookmarkShowAll
+nmap <Leader>fj <Plug>BookmarkNext
+nmap <Leader>fk <Plug>BookmarkPrev
 nmap <Leader>mc <Plug>BookmarkClear
 nmap <Leader>mx <Plug>BookmarkClearAll
-nmap <Leader>mkk <Plug>BookmarkMoveUp
-nmap <Leader>mjj <Plug>BookmarkMoveDown
+nmap <Leader>mu <Plug>BookmarkMoveUp
+nmap <Leader>md <Plug>BookmarkMoveDown
 nmap <Leader>mg <Plug>BookmarkMoveToLine
 "  === bookmarks ===
 "  --- airline ---
@@ -416,4 +416,16 @@ let g:gutentags_cache_dir = expand('~/.cache/tags')
 
 " forbid gutentags adding gtags databases
 let g:gutentags_auto_add_gtags_cscope = 0
+
+let g:gutentags_plus_nomap = 1
+noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
+noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
+noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
+noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
+noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
+noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
+noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
+noremap <silent> <leader>gz :GscopeFind z <C-R><C-W><cr>
 "  === gtags ===
