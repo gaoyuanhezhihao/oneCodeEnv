@@ -2,6 +2,11 @@
 import os
 from glob import glob
 
+def run_scripts():
+    install_scripts = glob("./install/*.sh")
+    for scrp in install_scripts:
+        os.system("sh "+scrp)
+
 if __name__ == '__main__':
     cwd = os.path.dirname(os.path.realpath(__file__))
     home = os.path.expanduser("~")
@@ -18,12 +23,8 @@ if __name__ == '__main__':
             print("there has been a \"%s\", moved to \"%s\""
                   %(dst, old_dst_bkp))
         os.symlink(src, dst)
-
-    os.system("git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim")
     os.makedirs('~/bin', exist_ok=True)
-    install_scripts = glob("./install/*.sh")
-    for scrp in install_scripts:
-        os.system("sh "+scrp)
+
     # os.symlink(cwd+"/bashrc", home+"/.bashrc")
     # os.symlink(cwd+"/vimrc", home+"/.vimrc")
     # os.symlink(cwd+"/tmux.conf", home+".tmux.conf")
