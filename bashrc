@@ -193,17 +193,26 @@ source ~/oneCodeEnv/shell/alias.sh
 export PS1="\h\[$(tput sgr0)\]\[\033[38;5;156m\]|\[$(tput sgr0)\]\[\033[38;5;15m\]\u \[$(tput sgr0)\]\[\033[38;5;214m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \n$ \[$(tput sgr0)\]"
 
 # ROS
-source /opt/ros/kinetic/setup.bash
-source /etc/profile.d/undistract-me.sh
-source ~/oneCodeEnv/specific/bashrc
+if [ -f /opt/ros/kinetic/setup.bash ]; then
+    source /opt/ros/kinetic/setup.bash
+fi
+if [ -f /opt/ros/melodic/setup.bash ]; then
+    source /opt/ros/melodic/setup.bash
+fi
+if [ -f /etc/profile.d/undistract-me.sh ]; then
+    source /etc/profile.d/undistract-me.sh
+fi
+if [ -f ~/oneCodeEnv/specific/bashrc ]; then
+    source ~/oneCodeEnv/specific/bashrc
+fi
 ## pyenv configs
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
-eval "$(pyenv virtualenv-init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
