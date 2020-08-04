@@ -57,8 +57,11 @@ source ~/.vim/color.vim
 "SimpylFold
 let g:SimpylFold_docstring_preview=1
 "Flagging unnecessary whitespace
-"set encoding = utf-8
-    "\ set softtabstop=4
+set softtabstop=2
+set tabstop=2
+set et
+set shiftwidth=2
+set expandtab
     "\ set shiftwidth=4
     "\ set textwidth=79
     "\ set expandtab
@@ -116,15 +119,22 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_cpplint_exec = 'cpplint'
+let g:syntastic_cpp_checkers = ['cpplint']
+" 设置 cpplint 的错误级别阈值（默认是 5），级别低于这一设置的不会显示
+let g:syntastic_cpp_cpplint_thres = 0
+let syntastic_aggregate_errors = 1
 "===Syntastic===
 "设置跳转的快捷键，可以跳转到definition和declaration
 "nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
 "nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_show_diagnostics_ui = 0
 let python_highlight_all=1
 "if has('gui_running')
 "colorscheme solarized
@@ -415,7 +425,7 @@ let g:gutentags_project_root = ['.root']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 
 " forbid gutentags adding gtags databases
-let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_auto_add_gtags_cscope = 1
 
 let g:gutentags_plus_nomap = 1
 noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
