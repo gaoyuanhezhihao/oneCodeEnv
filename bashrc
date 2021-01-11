@@ -181,12 +181,12 @@ alias tmux="tmux -2"
 #echo ".bashrc"
 
 # added by Anaconda3 4.4.0 installer
-export PATH="/home/hzh/anaconda3/bin:$PATH"
+# export PATH="/home/hzh/anaconda3/bin:$PATH"
 export PATH="$HOME/bin/bin:$PATH"
 export PATH="$HOME/bin/lib:$PATH"
 export LD_LIBRARY_PATH="$HOME/bin/lib:$LD_LIBRARY_PATH"
 source ~/oneCodeEnv/shell/env.sh
-source ~/oneCodeEnv/shell/func/sourceAll.sh
+#source ~/oneCodeEnv/shell/func/sourceAll.sh
 source ~/oneCodeEnv/shell/alias.sh
 
 
@@ -194,17 +194,18 @@ export PS1="\h\[$(tput sgr0)\]\[\033[38;5;156m\]|\[$(tput sgr0)\]\[\033[38;5;15m
 
 # ROS
 source /opt/ros/kinetic/setup.bash
-source /etc/profile.d/undistract-me.sh
-source ~/oneCodeEnv/specific/bashrc
+# source /etc/profile.d/undistract-me.sh
+# source ~/oneCodeEnv/specific/bashrc
 ## pyenv configs
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-eval "$(pyenv virtualenv-init -)"
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
+# eval "$(pyenv virtualenv-init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -s /home/zhihaohe/.autojump/etc/profile.d/autojump.sh ]] && source /home/zhihaohe/.autojump/etc/profile.d/autojump.sh
