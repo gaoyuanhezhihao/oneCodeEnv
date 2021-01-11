@@ -8,33 +8,19 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-"Plugin 'nvie/vim-flake8'
 "Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'jistr/vim-nerdtree-tabs'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'JazzCore/ctrlp-cmatcher'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'enricobacis/vim-airline-clock'
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-"Plugin 'Lokaltog/vim-powerline'
-"Plugin 'MarcWeber/vim-addon-mw-utils'
-"Plugin 'tomtom/tlib_vim'
-"Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'majutsushi/tagbar'
 Plugin 'brookhong/cscope.vim'
 Plugin 'morhetz/gruvbox'
-"Plugin 'octol/vim-cpp-enhanced-highlight'
-"Plugin 'bbchung/clighter'
-"Plugin 'othree/eregex.vim'
-"Plugin 'dkprice/vim-easygrep'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
@@ -45,9 +31,9 @@ Plugin 'svermeulen/vim-easyclip'
 Plugin 'tpope/vim-repeat'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'skywind3000/gutentags_plus'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-"Plugin 'alpertuna/vim-header'
-"Plugin 'sheerun/vim-polyglot'
+Plugin 'rhysd/vim-clang-format'
+Plugin 'sheerun/vim-polyglot'
+"Plugin 'jeaye/color_coded'
 call vundle#end()
 filetype on
 source ~/.vim/basic.vim
@@ -57,8 +43,12 @@ source ~/.vim/color.vim
 "SimpylFold
 let g:SimpylFold_docstring_preview=1
 "Flagging unnecessary whitespace
-"set encoding = utf-8
-    "\ set softtabstop=4
+syntax on
+set softtabstop=2
+set tabstop=2
+set et
+set shiftwidth=2
+set expandtab
     "\ set shiftwidth=4
     "\ set textwidth=79
     "\ set expandtab
@@ -116,15 +106,22 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_cpplint_exec = 'cpplint'
+let g:syntastic_cpp_checkers = ['cpplint']
+" 设置 cpplint 的错误级别阈值（默认是 5），级别低于这一设置的不会显示
+let g:syntastic_cpp_cpplint_thres = 0
+let syntastic_aggregate_errors = 1
 "===Syntastic===
 "设置跳转的快捷键，可以跳转到definition和declaration
 "nnoremap <leader>gc :YcmCompleter GoToDeclaration<CR>
 "nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_show_diagnostics_ui = 0
 let python_highlight_all=1
 "if has('gui_running')
 "colorscheme solarized
@@ -319,7 +316,8 @@ let g:cpp_concepts_highlight = 1
 "  ===
 ""  ---clighter---
 
-let g:clighter_libclang_file = '/usr/lib/llvm-3.9/lib/libclang.so'
+let g:clighter_libclang_file = '/usr/lib/llvm-3.8/lib/libclang.so.1'
+
 ""  ===clighter===
 function! CSCV()
     " add cscope file for opencv3 source code.
@@ -392,6 +390,7 @@ nmap <Leader>mg <Plug>BookmarkMoveToLine
 "let g:airline_section_b = '%{strftime("%c")}'
 "let g:airline#extensions#clock#format='%H:%M'
 "let g:airline#extensions#clock#updatetime=1000
+set noshowmode
 let g:airline_theme='sol'
 "let g:airline#extensions#whitespace#checks = [ 'indent' ]
 let g:airline#extensions#whitespace#enabled = 0
@@ -404,6 +403,46 @@ let g:airline_section_y = 0
 "let g:airline_setion_y='%t'
 "let g:airline_setion_z='%t'
 "  === airline ===
+"
+"
+"
+"
+"  --- lightline ---
+let g:lightline = {
+      \ 'colorscheme': 'PaperColor_dark',
+      \ 'component': {
+      \   'modified': '%#ModifiedColor#%{LightlineModified()}',
+      \ },
+      \ }
+
+function! LightlineModified()
+  let map = { 'V': 'n', "\<C-v>": 'n', 's': 'n', 'v': 'n', "\<C-s>": 'n', 'c': 'n', 'R': 'n'}
+  let mode = get(map, mode()[0], mode()[0])
+  let bgcolor = {'n': [240, '#585858'], 'i': [31, '#0087af']}
+  let color = get(bgcolor, mode, bgcolor.n)
+  exe printf('hi ModifiedColor ctermfg=196 ctermbg=%d guifg=#ff0000 guibg=%s term=bold cterm=bold',
+        \ color[0], color[1])
+  return &modified ? '+++++' : &modifiable ? '' : '-'
+endfunction
+
+"let g:lightline = { 'component': {'relativepath': '%#MyRelativePathColor#%{MyRelativePath()}' }}
+
+"function! MyRelativePath()
+"let map = { 'V': 'n', "\<C-v>": 'n', 's': 'n', 'v': 'n', "\<C-s>": 'n', 'c': 'n', 'R': 'n'}
+"let mode = get(map, mode()[0], mode()[0])
+"let bgcolor = {'n': [240, '#585858'], 'i': [31, '#0087af']}
+"let color = get(bgcolor, mode, bgcolor.n)
+"if &modified
+"exe printf('hi MyRelativePathColor ctermfg=196 ctermbg=%d guifg=#ff0000 guibg=%s term=bold cterm=bold', color[0], color[1])
+"endif
+"return expand('%:t')
+"endfunction
+"  === lightline ===
+"
+"
+"
+"
+"
 "  --- gtags ---
 " enable gtags module
 let g:gutentags_modules = ['gtags_cscope']
@@ -415,7 +454,7 @@ let g:gutentags_project_root = ['.root']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 
 " forbid gutentags adding gtags databases
-let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_auto_add_gtags_cscope = 1
 
 let g:gutentags_plus_nomap = 1
 noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
@@ -429,3 +468,17 @@ noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
 noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 noremap <silent> <leader>gz :GscopeFind z <C-R><C-W><cr>
 "  === gtags ===
+
+"  --- clang-format ---
+let g:clang_format#detect_style_file = 1
+let g:clang_format#command = "/usr/bin/clang-format-3.9"
+let g:clang_format#enable_fallback_style = 0 " clang-format does nothing when .clang-format is not founded.
+let g:clang_format#auto_format = 1 " inserted lines are automatically formatted on leaving insert mode.
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+"  === clang-format ===
+
+
+" --- color-coded ---
+let g:color_coded_filetypes = ['c', 'cpp', 'cc', 'h']
