@@ -186,16 +186,25 @@ export PATH="$HOME/bin/bin:$PATH"
 export PATH="$HOME/bin/lib:$PATH"
 export LD_LIBRARY_PATH="$HOME/bin/lib:$LD_LIBRARY_PATH"
 source ~/oneCodeEnv/shell/env.sh
-#source ~/oneCodeEnv/shell/func/sourceAll.sh
+source ~/oneCodeEnv/shell/func/sourceAll.sh
 source ~/oneCodeEnv/shell/alias.sh
 
 
 export PS1="\h\[$(tput sgr0)\]\[\033[38;5;156m\]|\[$(tput sgr0)\]\[\033[38;5;15m\]\u \[$(tput sgr0)\]\[\033[38;5;214m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \n$ \[$(tput sgr0)\]"
 
 # ROS
-source /opt/ros/kinetic/setup.bash
-# source /etc/profile.d/undistract-me.sh
-# source ~/oneCodeEnv/specific/bashrc
+if [ -f /opt/ros/kinetic/setup.bash ]; then
+    source /opt/ros/kinetic/setup.bash
+fi
+if [ -f /opt/ros/melodic/setup.bash ]; then
+    source /opt/ros/melodic/setup.bash
+fi
+if [ -f /etc/profile.d/undistract-me.sh ]; then
+    source /etc/profile.d/undistract-me.sh
+fi
+if [ -f ~/oneCodeEnv/specific/bashrc ]; then
+    source ~/oneCodeEnv/specific/bashrc
+fi
 ## pyenv configs
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
