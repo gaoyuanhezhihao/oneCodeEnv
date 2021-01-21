@@ -98,6 +98,11 @@ let g:ycm_error_symbol='>>'
 let g:ycm_warning_symbol='>*'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
+set completeopt-=preview
+" disable shows documentation in a popup at the cursor location.
+let g:ycm_auto_hover=""
+" show documentation manually
+nmap <leader>D <plug>(YCMHover)
 "---Syntastic---
 let g:syntastic_check_on_open = 1
 hi SpellBad ctermfg=088 guifg=#870000 guibg=#080808
