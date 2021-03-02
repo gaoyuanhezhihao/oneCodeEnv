@@ -34,6 +34,6 @@ rm -rf ~/oneCodeEnv/vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/oneCodeEnv/vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 cd ~/.vim/bundle/YouCompleteMe/
-git checkout f9906f804b02e6b7e70a7f1a6f949e905784b5b9
+git checkout f9906f804b02e6b7e70a7f1a6f949e905784b5b9 # this version only need compilter to support c++11.
 git submodule update --init --recursive
 ./install.py --clang-completer
