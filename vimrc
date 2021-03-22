@@ -481,6 +481,11 @@ let g:clang_format#auto_format = 1 " inserted lines are automatically formatted 
 " map to <Leader>cf in C++ code
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+" call clang-format manually
+map <C-w> :pyf $HOME/oneCodeEnv/vim/clang-format.py<cr>
+imap <C-I> <c-o>:pyf $HOME/oneCodeEnv/vim/clang-format.py<cr>
+
 "  === clang-format ===
 
 
