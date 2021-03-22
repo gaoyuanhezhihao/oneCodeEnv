@@ -32,7 +32,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'skywind3000/gutentags_plus'
 Plugin 'rhysd/vim-clang-format'
-Plugin 'sheerun/vim-polyglot'
 "Plugin 'jeaye/color_coded'
 call vundle#end()
 filetype on
