@@ -18,7 +18,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'xolox/vim-misc'
-Plugin 'majutsushi/tagbar'
+Plugin 'preservim/tagbar'
 Plugin 'brookhong/cscope.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'SirVer/ultisnips'
@@ -404,6 +404,9 @@ let g:airline#extensions#csv#enabled = 0
 let g:airline_section_b = 0
 let g:airline_section_y = 0
 
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tagbar#flags = ''
+let g:airline#extensions#tagbar#searchmethod = 'scoped-stl'
 "let g:airline_setion_y='%t'
 "let g:airline_setion_z='%t'
 "  === airline ===
@@ -412,22 +415,22 @@ let g:airline_section_y = 0
 "
 "
 "  --- lightline ---
-let g:lightline = {
-      \ 'colorscheme': 'PaperColor_dark',
-      \ 'component': {
-      \   'modified': '%#ModifiedColor#%{LightlineModified()}',
-      \ },
-      \ }
+"let g:lightline = {
+      "\ 'colorscheme': 'PaperColor_dark',
+      "\ 'component': {
+      "\   'modified': '%#ModifiedColor#%{LightlineModified()}',
+      "\ },
+      "\ }
 
-function! LightlineModified()
-  let map = { 'V': 'n', "\<C-v>": 'n', 's': 'n', 'v': 'n', "\<C-s>": 'n', 'c': 'n', 'R': 'n'}
-  let mode = get(map, mode()[0], mode()[0])
-  let bgcolor = {'n': [240, '#585858'], 'i': [31, '#0087af']}
-  let color = get(bgcolor, mode, bgcolor.n)
-  exe printf('hi ModifiedColor ctermfg=196 ctermbg=%d guifg=#ff0000 guibg=%s term=bold cterm=bold',
-        \ color[0], color[1])
-  return &modified ? '+++++' : &modifiable ? '' : '-'
-endfunction
+"function! LightlineModified()
+  "let map = { 'V': 'n', "\<C-v>": 'n', 's': 'n', 'v': 'n', "\<C-s>": 'n', 'c': 'n', 'R': 'n'}
+  "let mode = get(map, mode()[0], mode()[0])
+  "let bgcolor = {'n': [240, '#585858'], 'i': [31, '#0087af']}
+  "let color = get(bgcolor, mode, bgcolor.n)
+  "exe printf('hi ModifiedColor ctermfg=196 ctermbg=%d guifg=#ff0000 guibg=%s term=bold cterm=bold',
+        "\ color[0], color[1])
+  "return &modified ? '+++++' : &modifiable ? '' : '-'
+"endfunction
 
 "let g:lightline = { 'component': {'relativepath': '%#MyRelativePathColor#%{MyRelativePath()}' }}
 
