@@ -6,7 +6,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 "Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
@@ -29,10 +29,11 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'tpope/vim-repeat'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'skywind3000/gutentags_plus'
+"Plugin 'ludovicchabant/vim-gutentags'
+"Plugin 'skywind3000/gutentags_plus'
 Plugin 'rhysd/vim-clang-format'
-"Plugin 'jeaye/color_coded'
+Plugin 'neoclide/coc.nvim'
+Plugin 'jackguo380/vim-lsp-cxx-highlight'
 call vundle#end()
 filetype on
 source ~/.vim/basic.vim
@@ -56,6 +57,10 @@ set expandtab
 "YouCompleteMe
 "youcompleteme  默认tab  s-tab 和自动补全冲突
 " make YCM compatible with UltiSnips (using supertab)
+" Let clangd fully control code completion
+let g:ycm_clangd_uses_ycmd_caching = 1
+" Use installed clangd, not YCM-bundled clangd which doesn't get updates.
+let g:ycm_clangd_binary_path = exepath("clangd")
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
@@ -478,7 +483,7 @@ noremap <silent> <leader>gz :GscopeFind z <C-R><C-W><cr>
 
 "  --- clang-format ---
 let g:clang_format#detect_style_file = 1
-let g:clang_format#command = "/usr/bin/clang-format-3.9"
+let g:clang_format#command = '/home/zhihaohe/bin/bin/clang-format'
 let g:clang_format#enable_fallback_style = 0 " clang-format does nothing when .clang-format is not founded.
 let g:clang_format#auto_format = 1 " inserted lines are automatically formatted on leaving insert mode.
 " map to <Leader>cf in C++ code
@@ -489,8 +494,6 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 map <C-w> :pyf $HOME/oneCodeEnv/vim/clang-format.py<cr>
 imap <C-I> <c-o>:pyf $HOME/oneCodeEnv/vim/clang-format.py<cr>
 
-"  === clang-format ===
+" --- vim-lsp-cxx-highlight ---
+let g:lsp_cxx_hl_use_text_props = 0
 
-
-" --- color-coded ---
-let g:color_coded_filetypes = ['c', 'cpp', 'cc', 'h']
