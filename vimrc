@@ -34,6 +34,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'neoclide/coc.nvim'
 Plugin 'jackguo380/vim-lsp-cxx-highlight'
+Plugin 'tpope/vim-obsession.git'
 call vundle#end()
 filetype on
 source ~/.vim/basic.vim
