@@ -78,3 +78,9 @@ function! ExecuteMacroOverVisualRange()
   echo "@".getcmdline()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
+
+function! EchoFilePath()
+  echo expand('%:p')     |" full path
+endfunction
+noremap <silent> <leader>F :call EchoFilePath()<CR>
+set swapfile
