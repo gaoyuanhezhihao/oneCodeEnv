@@ -309,47 +309,9 @@ nmap <Leader>t :TagbarOpenAutoClose<CR>
 "  ===tagbar===
 "  ---easytag--
 set tags+=./tags;../tags
-"set tags+=~/study/c_cpp/stl/SGI/stl/tags
 set tags+=/home/hzh/oneCodeEnv/vim/tags/tags
 let g:easytags_dynamic_files=1
-"let g:easytags_cmd='/home/hzh/software/coder/ctags/exe/bin/ctags'
 "  ===easytag==
-"  ---vim-cpp-enhanced-highlight---
-let g:cpp_concepts_highlight = 1
-let g:cpp_experimental_template_highlight = 1
-let g:cpp_experimental_simple_template_highlight = 1
-let g:cpp_class_scope_highlight = 1
-"  ===vim-cpp-enhanced-highlight===
-"  --- vim-cpp-enhanced-hightlight ---
-let g:cpp_class_scope_highlight = 1
-let g:cpp_concepts_highlight = 1
-"  ===
-""  ---clighter---
-
-let g:clighter_libclang_file = '/usr/lib/llvm-3.8/lib/libclang.so.1'
-
-""  ===clighter===
-function! CSCV()
-    " add cscope file for opencv3 source code.
-    cscope add /home/hzh/study/cv/opencv3/source/cscope.out /home/hzh/study/cv/opencv3/source
-endfunction    
-
-function! Cstl()
-    " add cscope file for SGI-STL source code.
-    cscope add /home/hzh/study/c_cpp/stl/SGI/stl/cscope.out /home/hzh/study/c_cpp/stl/SGI/stl
-endfunction
-"" ---The Silver Searcher---
-"if executable('ag')
-  "" Use ag over grep
-  "set grepprg=ag\ --nogroup\ --nocolor
-
-  "" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  "" ag is fast enough that CtrlP doesn't need to cache
-  "let g:ctrlp_use_caching = 0
-"endif
-"" === The Silver Searcher ===
 "  --- EasyMotion ---
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
