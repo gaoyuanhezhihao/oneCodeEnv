@@ -2,6 +2,8 @@
 set -e # quit if any command fail
 set -x
 
+sudo apt-get install -y automake
+sudo apt install -y libtool
 echo "installing tmux"
 mkdir -p $HOME/bin
 INSTALL_DIR=$HOME/bin
@@ -17,7 +19,7 @@ wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz -O /tmp/ncurses-6.0.tar.gz
 tar -xvf libevent.tar.gz
 cd libevent-release-2.1.12-stable
 ./autogen.sh
-./configure --prefix=/$HOME/bin/
+./configure --prefix=/$HOME/bin/ --disable-openssl
 make
 make install
 cd ../ 

@@ -1,5 +1,5 @@
-BEGIN{num=0}
-11 <= NR && NR <= 26{
+BEGIN{num=1}
+$1 ~ /optional/{
   gsub(/[0-9][0-9]*/, num);
   num+=1
   print $0 }
