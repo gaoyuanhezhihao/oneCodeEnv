@@ -33,8 +33,14 @@ Plugin 'tpope/vim-repeat'
 "Plugin 'skywind3000/gutentags_plus'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'neoclide/coc.nvim'
-Plugin 'jackguo380/vim-lsp-cxx-highlight'
+"Plugin 'jackguo380/vim-lsp-cxx-highlight'
+"Plugin 'bagrat/vim-buffet'
+Plugin 'webdevel/tabulous'
 Plugin 'tpope/vim-obsession.git'
+Plugin 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+"Plugin 'davidhalter/jedi-vim'
+"Plugin 'pacha/vem-tabline'
+Plugin 'dominikduda/vim_current_word'
 call vundle#end()
 filetype on
 source ~/.vim/basic.vim
@@ -61,7 +67,7 @@ set expandtab
 " Let clangd fully control code completion
 let g:ycm_clangd_uses_ycmd_caching = 1
 " Use installed clangd, not YCM-bundled clangd which doesn't get updates.
-let g:ycm_clangd_binary_path = exepath("clangd")
+let g:ycm_clangd_binary_path = exepath("/home/zhihaohe/software/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-16.04/bin/clangd")
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
@@ -112,9 +118,9 @@ nmap <leader>D <plug>(YCMHover)
 let g:syntastic_check_on_open = 1
 hi SpellBad ctermfg=088 guifg=#870000 guibg=#080808
 hi SpellCap ctermfg=190 guifg=#dfff00 guibg=#080808
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_always_populate_loc_list = 1
@@ -371,10 +377,17 @@ let g:airline#extensions#csv#enabled = 0
 "disable git status
 let g:airline_section_b = 0
 let g:airline_section_y = 0
+let g:airline_section_z = 0
+
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tagline#formatter = 'unique_tail'
 
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#tagbar#flags = ''
 let g:airline#extensions#tagbar#searchmethod = 'scoped-stl'
+
 "let g:airline_setion_y='%t'
 "let g:airline_setion_z='%t'
 "  === airline ===
@@ -439,14 +452,14 @@ noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
 noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
 noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
 noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
-noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
+noremap <silent> <leader>gD :GscopeFind d <C-R><C-W><cr>
 noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 noremap <silent> <leader>gz :GscopeFind z <C-R><C-W><cr>
 "  === gtags ===
 
 "  --- clang-format ---
 let g:clang_format#detect_style_file = 1
-let g:clang_format#command = '/home/zhihaohe/bin/bin/clang-format'
+let g:clang_format#command = '/home/zhihaohe/.local/bin/clang-format'
 let g:clang_format#enable_fallback_style = 0 " clang-format does nothing when .clang-format is not founded.
 let g:clang_format#auto_format = 1 " inserted lines are automatically formatted on leaving insert mode.
 " map to <Leader>cf in C++ code
@@ -459,4 +472,48 @@ imap <C-I> <c-o>:pyf $HOME/oneCodeEnv/vim/clang-format.py<cr>
 
 " --- vim-lsp-cxx-highlight ---
 let g:lsp_cxx_hl_use_text_props = 0
+let g:lsp_cxx_hl_log_file = "/tmp/lsp_cxx_hl.log"
+" --- vim-buffet ---
+"noremap <Tab> :bn<CR>
+"noremap <S-Tab> :bp<CR>
+"noremap <Leader><Tab> :Bw<CR>
+"noremap <Leader><S-Tab> :Bw!<CR>
+"noremap <C-t> :tabnew split<CR>
 
+nnoremap <leader>1 :1tabnext<CR>
+nnoremap <leader>2 :2tabnext<CR>
+nnoremap <leader>3 :3tabnext<CR>
+nnoremap <leader>4 :4tabnext<CR>
+nnoremap <leader>5 :5tabnext<CR>
+nnoremap <leader>6 :6tabnext<CR>
+nnoremap <leader>7 :7tabnext<CR>
+nnoremap <leader>8 :8tabnext<CR>
+nnoremap <leader>9 :9tabnext<CR>
+
+" --- tabulous ---
+let tabulousLabelNameOptions = ':t'
+
+
+" --- vem-tabline ---
+"nmap <leader>h <Plug>vem_move_buffer_left-
+"nmap <leader>l <Plug>vem_move_buffer_right-
+"nmap gT <Plug>vem_prev_buffer-
+"nmap gt <Plug>vem_next_buffer-
+" --- coc.nvim ---
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+let g:coc_default_semantic_highlight_groups = 1
+" DarkSlateGray3
+hi CocSemProperty ctermfg=195 guifg=#83a598 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
+" SteelBlue1
+hi CocSemParameter ctermfg=75 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
+" Steel Blue
+hi CocSemVariable ctermfg=67 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
+
+" == coc.nvim ===
+" --- vim_current_word ---
+hi CurrentWord ctermbg=16 cterm=bold
+hi CurrentWordTwins ctermbg=237
+" === vim_current_word ===

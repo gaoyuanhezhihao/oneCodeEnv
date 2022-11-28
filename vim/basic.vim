@@ -84,3 +84,22 @@ function! EchoFilePath()
 endfunction
 noremap <silent> <leader>F :call EchoFilePath()<CR>
 set swapfile
+
+nmap <F4> :call OpenOrGoToBrotherFile()<cr>
+function! OpenOrGoToBrotherFile() 
+  "let file_name = expand('%:t:r')
+  let extension = expand('%:e')
+  let ext_len = len(extension)+2
+  "echo ext_len
+  let file_path = @%
+  let file_path = file_path[0:-ext_len]
+  if extension == 'h'
+    let target = file_path .. '.cc'
+  elseif extension == 'cc'
+    let target = file_path .. '.h'
+  else
+    echo "Unknow file extension:" extension
+  endif
+  echo "will open " target
+  exe ":tabnew " .. target
+endfunction

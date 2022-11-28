@@ -1,0 +1,14 @@
+snippet lib "library .. (library)" !
+cc_library(
+    name = "$1",
+    srcs = [
+        "$1.cc",
+    ],
+    hdrs = [
+        "$1.h",
+    ],
+    deps = [
+        "",
+    ]
+)
+endsnippet
