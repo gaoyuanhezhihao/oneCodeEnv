@@ -516,4 +516,6 @@ hi CocSemVariable ctermfg=67 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cter
 " --- vim_current_word ---
 hi CurrentWord ctermbg=16 cterm=bold
 hi CurrentWordTwins ctermbg=237
+" Apply the most preferred quickfix action to fix diagnostic on the current line
+nmap <leader>qf  <Plug>(coc-fix-current)
 " === vim_current_word ===
