@@ -95,7 +95,7 @@ let g:ycm_key_invoke_completion = '<C-/>'
 " 在接受补全后不分裂出一个窗口显示接受的项
 set completeopt-=preview
 "force recomile with syntastic
-nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+nnoremap <F5> :CocCommand document.toggleInlayHint<CR>
 " 
 "在注释输入中也能补全
 let g:ycm_complete_in_comments = 1
@@ -506,11 +506,11 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 let g:coc_default_semantic_highlight_groups = 1
 " DarkSlateGray3
-hi CocSemProperty ctermfg=195 guifg=#83a598 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
+hi CocSemTypeProperty ctermfg=195 guifg=#83a598 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
 " SteelBlue1
-hi CocSemParameter ctermfg=75 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
+hi CocSemTypeParameter ctermfg=75 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
 " Steel Blue
-hi CocSemVariable ctermfg=67 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
+hi CocSemTypeVariable ctermfg=67 guifg=#005f00 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE 
 
 " == coc.nvim ===
 " --- vim_current_word ---
