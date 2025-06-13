@@ -459,7 +459,7 @@ noremap <silent> <leader>gz :GscopeFind z <C-R><C-W><cr>
 
 "  --- clang-format ---
 let g:clang_format#detect_style_file = 1
-let g:clang_format#command = '/home/zhihaohe/.local/bin/clang-format'
+let g:clang_format#command = '/usr/bin/clang-format-14'
 let g:clang_format#enable_fallback_style = 0 " clang-format does nothing when .clang-format is not founded.
 let g:clang_format#auto_format = 1 " inserted lines are automatically formatted on leaving insert mode.
 " map to <Leader>cf in C++ code
